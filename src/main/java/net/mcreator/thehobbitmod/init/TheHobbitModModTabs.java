@@ -38,6 +38,8 @@ public class TheHobbitModModTabs {
 					tabData.accept(TheHobbitModModItems.MITHRIL_ARMOR_BOOTS.get());
 					tabData.accept(TheHobbitModModItems.ORC_SPAWN_EGG.get());
 					tabData.accept(TheHobbitModModItems.MISTY_MOUNTAINS.get());
+					tabData.accept(TheHobbitModModItems.NINE_RINGS.get());
+					tabData.accept(TheHobbitModModItems.NAZGUL_SPAWN_EGG.get());
 				})
 
 		);

@@ -668,6 +668,57 @@
         ]
       },
       "path": "~/Advancements"
+    },
+    {
+      "name": "NineRings",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nine_rings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/NineRingsItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/nine_rings.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Nazgul",
+      "type": "livingentity",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nazgul",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/entity/NazgulEntity.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/nazgul_spawn_egg.json",
+          "src/main/java/net/mcreator/thehobbitmod/client/renderer/NazgulRenderer.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "Wraithing",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wraithing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/procedures/WraithingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -703,56 +754,77 @@
       ],
       "category": "music",
       "subtitle": ""
+    },
+    {
+      "name": "nazgul",
+      "files": [
+        "nazgul"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "nazgul_dead",
+      "files": [
+        "nazgul_dead"
+      ],
+      "category": "hostile",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "item.the_hobbit_mod.mithril_armor_boots": "Mithril Boots",
-      "block.the_hobbit_mod.burning_magma": "Burning Magma",
-      "item.the_hobbit_mod.mithril_armor_leggings": "Mithril Leggings",
       "subtitles.erebor": "",
       "biome.the_hobbit_mod.elven_forest": "Elven Forest",
+      "subtitles.nazgul_dead": "",
       "subtitles.dreaming_of_bag_endd": "",
-      "item.the_hobbit_mod.misty_mountains.desc": "Misty Mountains song from The Hobbit.",
-      "subtitles.moon_runes": "",
       "item.the_hobbit_mod.mithril_sword": "Mithril Sword",
-      "item.the_hobbit_mod.mithril_axe": "Mithril Axe",
-      "subtitles.the_adventure_begins": "",
       "subtitles.feast_of_starlight": "",
-      "item.the_hobbit_mod.raw_mithril": "Raw Mithril",
-      "subtitles.hobbit_ambient": "",
-      "subtitles.mistymountains": "",
+      "entity.the_hobbit_mod.nazgul": "Nazgul",
       "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
-      "item.the_hobbit_mod.mithril_ingot": "Mithril Ingot",
       "subtitles.smaug": "",
-      "item.the_hobbit_mod.orcrist": "Orcrist",
       "subtitles.dreaming_of_bag_end": "",
       "itemGroup.tabthe_hobbit_mod": "The Hobbit Mod",
       "item.the_hobbit_mod.glamdring": "Glamdring",
       "item.the_hobbit_mod.mithril_armor_chestplate": "Mithril Chestplate",
       "entity.the_hobbit_mod.orc": "Orc",
       "advancements.its_worth_is_greater.title": "It\u0027s worth is greater then the whole Shire...",
-      "advancements.mithril.title": "Mithril!",
       "item.the_hobbit_mod.pipe": "Pipe",
       "subtitles.get_ring": "",
-      "item.the_hobbit_mod.sting": "Sting",
       "subtitles.lothlorien": "",
-      "item.the_hobbit_mod.mithril_pickaxe": "Mithril Pickaxe",
-      "subtitles.misty_mountains": "",
       "item.the_hobbit_mod.the_one_ring": "The One Ring",
       "advancements.mithril.descr": "Mine your first mithril.",
-      "item_group.the_hobbit_mod.the_hobbit_mod": "The Hobbit Mod",
+      "item.the_hobbit_mod.nazgul_spawn_egg": "Nazgul Spawn Egg",
       "item.the_hobbit_mod.heated_mithril": "Heated Mithril",
       "advancements.my_precious.descr": "Find the One Ring",
-      "advancements.its_worth_is_greater.descr": "Make a Mithril Chestplate.",
       "item.the_hobbit_mod.orc_spawn_egg": "Orc Spawn Egg",
+      "item.the_hobbit_mod.nine_rings": "The Nine Rings",
+      "item.the_hobbit_mod.mithril_armor_helmet": "Mithril Helmet",
+      "advancements.the_hobbit_mod_install.descr": "Install the Hobbit Mod",
+      "block.the_hobbit_mod.mithril_ore": "Mithril Ore",
+      "block.the_hobbit_mod.burning_magma": "Burning Magma",
+      "item.the_hobbit_mod.mithril_armor_leggings": "Mithril Leggings",
+      "item.the_hobbit_mod.misty_mountains.desc": "Misty Mountains song from The Hobbit.",
+      "subtitles.moon_runes": "",
+      "item.the_hobbit_mod.mithril_axe": "Mithril Axe",
+      "subtitles.the_adventure_begins": "",
+      "item.the_hobbit_mod.raw_mithril": "Raw Mithril",
+      "subtitles.hobbit_ambient": "",
+      "subtitles.mistymountains": "",
+      "item.the_hobbit_mod.mithril_ingot": "Mithril Ingot",
+      "item.the_hobbit_mod.orcrist": "Orcrist",
+      "advancements.mithril.title": "Mithril!",
+      "item.the_hobbit_mod.sting": "Sting",
+      "item.the_hobbit_mod.mithril_pickaxe": "Mithril Pickaxe",
+      "subtitles.misty_mountains": "",
+      "subtitles.nazgul": "",
+      "item_group.the_hobbit_mod.the_hobbit_mod": "The Hobbit Mod",
+      "advancements.its_worth_is_greater.descr": "Make a Mithril Chestplate.",
       "biome.the_hobbit_mod.dragon_burned_field": "Dragon Burned Field",
       "advancements.the_hobbit_mod_install.title": "The Hobbit Mod Install",
       "advancements.my_precious.title": "My Precious!",
-      "item.the_hobbit_mod.misty_mountains": "Misty Mountains",
-      "item.the_hobbit_mod.mithril_armor_helmet": "Mithril Helmet",
-      "advancements.the_hobbit_mod_install.descr": "Install the Hobbit Mod",
-      "block.the_hobbit_mod.mithril_ore": "Mithril Ore"
+      "item.the_hobbit_mod.misty_mountains": "Misty Mountains"
     }
   },
   "foldersRoot": {

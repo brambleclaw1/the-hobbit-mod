@@ -30,5 +30,21 @@
         "stream": true
       }
     ]
+  },
+  "nazgul": {
+    "sounds": [
+      {
+        "name": "the_hobbit_mod:nazgul",
+        "stream": false
+      }
+    ]
+  },
+  "nazgul_dead": {
+    "sounds": [
+      {
+        "name": "the_hobbit_mod:nazgul_dead",
+        "stream": false
+      }
+    ]
   }
 }

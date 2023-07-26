@@ -18,6 +18,7 @@ import net.mcreator.thehobbitmod.item.StingItem;
 import net.mcreator.thehobbitmod.item.RawMithrilItem;
 import net.mcreator.thehobbitmod.item.PipeItem;
 import net.mcreator.thehobbitmod.item.OrcristItem;
+import net.mcreator.thehobbitmod.item.NineRingsItem;
 import net.mcreator.thehobbitmod.item.MithrilSwordItem;
 import net.mcreator.thehobbitmod.item.MithrilPickaxeItem;
 import net.mcreator.thehobbitmod.item.MithrilIngotItem;
@@ -51,6 +52,8 @@ public class TheHobbitModModItems {
 	public static final RegistryObject<Item> MITHRIL_ARMOR_BOOTS = REGISTRY.register("mithril_armor_boots", () -> new MithrilArmorItem.Boots());
 	public static final RegistryObject<Item> ORC_SPAWN_EGG = REGISTRY.register("orc_spawn_egg", () -> new ForgeSpawnEggItem(TheHobbitModModEntities.ORC, -6750208, -16777216, new Item.Properties()));
 	public static final RegistryObject<Item> MISTY_MOUNTAINS = REGISTRY.register("misty_mountains", () -> new MistyMountainsItem());
+	public static final RegistryObject<Item> NINE_RINGS = REGISTRY.register("nine_rings", () -> new NineRingsItem());
+	public static final RegistryObject<Item> NAZGUL_SPAWN_EGG = REGISTRY.register("nazgul_spawn_egg", () -> new ForgeSpawnEggItem(TheHobbitModModEntities.NAZGUL, -16777216, -13421773, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
