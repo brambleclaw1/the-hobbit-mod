@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[45,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="the_hobbit_mod"
+version="1.1.2"
+displayName="The Hobbit Mod"
+credits="gh5674"
+displayURL="https://mcreator.net/modification/92049/hobbit-mod"
+logoFile="logo.png"
+authors="gh5674"
+description="Introduces The Hobbit into Minecraft."
+
+[[dependencies.the_hobbit_mod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.4]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

@@ -1,0 +1,19 @@
+{
+  "_fv": 43,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Misty Mountains",
+    "texture": "mistymountains",
+    "description": "Misty Mountains song from The Hobbit.",
+    "creativeTab": {
+      "value": "CUSTOM:TheHobbitMod"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:misty_mountains"
+    },
+    "lengthInTicks": 4800,
+    "analogOutput": 0
+  }
+}

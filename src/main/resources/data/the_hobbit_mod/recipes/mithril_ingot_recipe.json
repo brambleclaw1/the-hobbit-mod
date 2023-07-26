@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "the_hobbit_mod:heated_mithril"
+  },
+  "addition": {
+    "item": "the_hobbit_mod:burning_magma_shard"
+  },
+  "result": {
+    "item": "the_hobbit_mod:mithril_ingot"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "the_hobbit_mod:the_one_ring"
+    },
+    "title": {
+      "translate": "advancements.the_hobbit_mod_install.title"
+    },
+    "description": {
+      "translate": "advancements.the_hobbit_mod_install.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_hobbit_mod_install": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:overworld"
+      }
+    }
+  }
+}

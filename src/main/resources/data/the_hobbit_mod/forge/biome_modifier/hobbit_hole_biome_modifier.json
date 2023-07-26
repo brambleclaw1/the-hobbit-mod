@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "forest",
+    "plains"
+  ],
+  "features": "the_hobbit_mod:hobbit_hole",
+  "step": "surface_structures"
+}

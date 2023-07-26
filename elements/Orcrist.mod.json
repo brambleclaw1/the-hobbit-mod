@@ -1,0 +1,27 @@
+{
+  "_fv": 43,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "orcrist",
+    "customModelName": "Normal",
+    "name": "Orcrist",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TheHobbitMod"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 6,
+    "efficiency": 14.0,
+    "attackSpeed": 4.0,
+    "enchantability": 28,
+    "damageVsEntity": 73.0,
+    "usageCount": 9076,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

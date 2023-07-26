@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:disc_fragment_5"
+    },
+    "1": {
+      "item": "minecraft:disc_fragment_5"
+    },
+    "2": {
+      "item": "minecraft:disc_fragment_5"
+    },
+    "3": {
+      "item": "minecraft:disc_fragment_5"
+    },
+    "4": {
+      "item": "the_hobbit_mod:mithril_ingot"
+    },
+    "5": {
+      "item": "minecraft:disc_fragment_5"
+    },
+    "6": {
+      "item": "minecraft:disc_fragment_5"
+    },
+    "7": {
+      "item": "minecraft:disc_fragment_5"
+    },
+    "8": {
+      "item": "minecraft:disc_fragment_5"
+    }
+  },
+  "result": {
+    "item": "the_hobbit_mod:misty_mountains",
+    "count": 1
+  }
+}

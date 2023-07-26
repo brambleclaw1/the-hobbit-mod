@@ -1,0 +1,34 @@
+{
+  "dreaming_of_bag_end": {
+    "sounds": [
+      {
+        "name": "the_hobbit_mod:dreaming_of_bag_end",
+        "stream": true
+      }
+    ]
+  },
+  "feast_of_starlight": {
+    "sounds": [
+      {
+        "name": "the_hobbit_mod:feast_of_starlight",
+        "stream": true
+      }
+    ]
+  },
+  "smaug": {
+    "sounds": [
+      {
+        "name": "the_hobbit_mod:smaug",
+        "stream": true
+      }
+    ]
+  },
+  "misty_mountains": {
+    "sounds": [
+      {
+        "name": "the_hobbit_mod:misty_mountains",
+        "stream": true
+      }
+    ]
+  }
+}

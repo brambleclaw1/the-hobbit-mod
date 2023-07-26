@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_hobbit_mod:the_one_ring"
+    },
+    "title": {
+      "translate": "advancements.my_precious.title"
+    },
+    "description": {
+      "translate": "advancements.my_precious.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "my_precious": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_hobbit_mod:the_one_ring"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "the_hobbit_mod:the_hobbit_mod_install"
+}

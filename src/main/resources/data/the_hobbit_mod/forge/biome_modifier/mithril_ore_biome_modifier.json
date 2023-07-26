@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "the_hobbit_mod:mithril_ore",
+  "step": "underground_ores"
+}

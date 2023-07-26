@@ -1,0 +1,824 @@
+{
+  "mod_elements": [
+    {
+      "name": "TheHobbitMod",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_hobbit_mod",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "MithrilIngot",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_ingot.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/MithrilIngotItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "TheOneRing",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_one_ring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/the_one_ring.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/TheOneRingItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "HeatedMithril",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heated_mithril",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/heated_mithril.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/HeatedMithrilItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RawMithril",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_mithril",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/raw_mithril.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/RawMithrilItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "HeatedMithrilRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heated_mithril_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/heated_mithril_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BurningMagmaShard",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_magma_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/BurningMagmaShardItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/burning_magma_shard.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "BurningMagma",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_magma",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/burning_magma.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/burning_magma.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/burning_magma.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/burning_magma.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/burning_magma.json",
+          "src/main/java/net/mcreator/thehobbitmod/world/features/ores/BurningMagmaFeature.java",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/burning_magma_biome_modifier.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/BurningMagmaBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MithrilIngotRecipe",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mithril_ingot_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MithrilPickaxe",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_pickaxe.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/MithrilPickaxeItem.java"
+        ]
+      },
+      "path": "~/ToolsAndArmor"
+    },
+    {
+      "name": "MithrilPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mithril_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MithrilSword",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_sword.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/MithrilSwordItem.java"
+        ]
+      },
+      "path": "~/ToolsAndArmor"
+    },
+    {
+      "name": "MithrilSwordRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mithril_sword_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "HobbitHole",
+      "type": "structure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hobbit_hole",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/world/features/HobbitHoleFeature.java",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/hobbit_hole.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/hobbit_hole_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/hobbit_hole.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Sting",
+      "type": "tool",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/StingItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/sting.json"
+        ]
+      },
+      "path": "~/ToolsAndArmor"
+    },
+    {
+      "name": "Glamdring",
+      "type": "tool",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glamdring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/GlamdringItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/glamdring.json"
+        ]
+      },
+      "path": "~/ToolsAndArmor"
+    },
+    {
+      "name": "Orcrist",
+      "type": "tool",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orcrist",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/OrcristItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/orcrist.json"
+        ]
+      },
+      "path": "~/ToolsAndArmor"
+    },
+    {
+      "name": "TheOneRingItemInHandTick",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_one_ring_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/procedures/TheOneRingItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "OrcTunnel",
+      "type": "structure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orc_tunnel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/orc_tunnel.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/orc_tunnel.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/orc_tunnel_biome_modifier.json",
+          "src/main/java/net/mcreator/thehobbitmod/world/features/OrcTunnelFeature.java"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "MithrilOre",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/block/MithrilOreBlock.java",
+          "src/main/java/net/mcreator/thehobbitmod/world/features/ores/MithrilOreFeature.java",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/mithril_ore.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_ore.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mithril_ore.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/mithril_ore_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/mithril_ore.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mithril_ore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MithrilAxe",
+      "type": "tool",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_axe.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/MithrilAxeItem.java"
+        ]
+      },
+      "path": "~/ToolsAndArmor"
+    },
+    {
+      "name": "PipeRightclicked",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipe_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/procedures/PipeRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Pipe",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/PipeItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/pipe.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "MithrilArmor",
+      "type": "armor",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_leggings.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/MithrilArmorItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_helmet.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_chestplate.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_boots.json"
+        ]
+      },
+      "path": "~/ToolsAndArmor"
+    },
+    {
+      "name": "MithrilArmorBodyTickEvent",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_armor_body_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/procedures/MithrilArmorBodyTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "MithrilAxeRecipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mithril_axe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MithrilHelmetRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mithril_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MithrilChestplateRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mithril_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MithrilLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mithril_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MithrilBootsRecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mithril_boots_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Orc",
+      "type": "livingentity",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/entity/OrcEntity.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/orc_spawn_egg.json",
+          "src/main/java/net/mcreator/thehobbitmod/client/renderer/OrcRenderer.java",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/orc_biome_modifier.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "OrcLootTable",
+      "type": "loottable",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orc_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/loot_tables/entities/orc.json"
+        ]
+      },
+      "path": "~/Loot Tables"
+    },
+    {
+      "name": "MistyMountains",
+      "type": "musicdisc",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "misty_mountains",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/MistyMountainsItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/misty_mountains.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ElvenForest",
+      "type": "biome",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elven_forest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/elven_forest_tree.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "PipeRecipe",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/pipe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DragonBurnedField",
+      "type": "biome",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_burned_field",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/dragon_burned_field.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "MistyMountainsRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "misty_mountains_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/misty_mountains_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AbandonedDwarfMine",
+      "type": "structure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abandoned_dwarf_mine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/world/features/AbandonedDwarfMineFeature.java",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/abandoned_dwarf_mine.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/abandoned_dwarf_mine.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/abandoned_dwarf_mine_biome_modifier.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "ElvenVillage",
+      "type": "structure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elven_village",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_village.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/elven_village.json",
+          "src/main/java/net/mcreator/thehobbitmod/world/features/ElvenVillageFeature.java",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/elven_village_biome_modifier.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "TheHobbitModInstall",
+      "type": "achievement",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_hobbit_mod_install",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/the_hobbit_mod_install.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Mithril",
+      "type": "achievement",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/mithril.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "MyPrecious",
+      "type": "achievement",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "my_precious",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/my_precious.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ItsWorthIsGreater",
+      "type": "achievement",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "its_worth_is_greater",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/its_worth_is_greater.json"
+        ]
+      },
+      "path": "~/Advancements"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "dreaming_of_bag_end",
+      "files": [
+        "dreaming_of_bag_end"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "feast_of_starlight",
+      "files": [
+        "feast_of_starlight"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "smaug",
+      "files": [
+        "smaug"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "misty_mountains",
+      "files": [
+        "misty_mountains"
+      ],
+      "category": "music",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.the_hobbit_mod.mithril_armor_boots": "Mithril Boots",
+      "block.the_hobbit_mod.burning_magma": "Burning Magma",
+      "item.the_hobbit_mod.mithril_armor_leggings": "Mithril Leggings",
+      "subtitles.erebor": "",
+      "biome.the_hobbit_mod.elven_forest": "Elven Forest",
+      "subtitles.dreaming_of_bag_endd": "",
+      "item.the_hobbit_mod.misty_mountains.desc": "Misty Mountains song from The Hobbit.",
+      "subtitles.moon_runes": "",
+      "item.the_hobbit_mod.mithril_sword": "Mithril Sword",
+      "item.the_hobbit_mod.mithril_axe": "Mithril Axe",
+      "subtitles.the_adventure_begins": "",
+      "subtitles.feast_of_starlight": "",
+      "item.the_hobbit_mod.raw_mithril": "Raw Mithril",
+      "subtitles.hobbit_ambient": "",
+      "subtitles.mistymountains": "",
+      "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
+      "item.the_hobbit_mod.mithril_ingot": "Mithril Ingot",
+      "subtitles.smaug": "",
+      "item.the_hobbit_mod.orcrist": "Orcrist",
+      "subtitles.dreaming_of_bag_end": "",
+      "itemGroup.tabthe_hobbit_mod": "The Hobbit Mod",
+      "item.the_hobbit_mod.glamdring": "Glamdring",
+      "item.the_hobbit_mod.mithril_armor_chestplate": "Mithril Chestplate",
+      "entity.the_hobbit_mod.orc": "Orc",
+      "advancements.its_worth_is_greater.title": "It\u0027s worth is greater then the whole Shire...",
+      "advancements.mithril.title": "Mithril!",
+      "item.the_hobbit_mod.pipe": "Pipe",
+      "subtitles.get_ring": "",
+      "item.the_hobbit_mod.sting": "Sting",
+      "subtitles.lothlorien": "",
+      "item.the_hobbit_mod.mithril_pickaxe": "Mithril Pickaxe",
+      "subtitles.misty_mountains": "",
+      "item.the_hobbit_mod.the_one_ring": "The One Ring",
+      "advancements.mithril.descr": "Mine your first mithril.",
+      "item_group.the_hobbit_mod.the_hobbit_mod": "The Hobbit Mod",
+      "item.the_hobbit_mod.heated_mithril": "Heated Mithril",
+      "advancements.my_precious.descr": "Find the One Ring",
+      "advancements.its_worth_is_greater.descr": "Make a Mithril Chestplate.",
+      "item.the_hobbit_mod.orc_spawn_egg": "Orc Spawn Egg",
+      "biome.the_hobbit_mod.dragon_burned_field": "Dragon Burned Field",
+      "advancements.the_hobbit_mod_install.title": "The Hobbit Mod Install",
+      "advancements.my_precious.title": "My Precious!",
+      "item.the_hobbit_mod.misty_mountains": "Misty Mountains",
+      "item.the_hobbit_mod.mithril_armor_helmet": "Mithril Helmet",
+      "advancements.the_hobbit_mod_install.descr": "Install the Hobbit Mod",
+      "block.the_hobbit_mod.mithril_ore": "Mithril Ore"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "ToolsAndArmor",
+        "children": []
+      },
+      {
+        "name": "Structures",
+        "children": []
+      },
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Biomes",
+        "children": []
+      },
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "Entities",
+        "children": []
+      },
+      {
+        "name": "Loot Tables",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "the_hobbit_mod",
+    "modName": "The Hobbit Mod",
+    "version": "1.1.2",
+    "description": "Introduces The Hobbit into Minecraft.",
+    "author": "gh5674",
+    "websiteURL": "https://mcreator.net/modification/92049/hobbit-mod",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "the_ring",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.4",
+    "credits": "gh5674",
+    "modElementsPackage": "net.mcreator.thehobbitmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

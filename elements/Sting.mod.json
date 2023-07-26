@@ -1,0 +1,27 @@
+{
+  "_fv": 43,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "sting",
+    "customModelName": "Normal",
+    "name": "Sting",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TheHobbitMod"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 6,
+    "efficiency": 14.0,
+    "attackSpeed": 3.0,
+    "enchantability": 28,
+    "damageVsEntity": 26.0,
+    "usageCount": 4065,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
