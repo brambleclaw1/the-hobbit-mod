@@ -719,6 +719,51 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "DolGuldurLoot",
+      "type": "loottable",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dol_guldur_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/loot_tables/chests/dol_guldur_loot.json"
+        ]
+      },
+      "path": "~/Loot Tables"
+    },
+    {
+      "name": "Mordor",
+      "type": "biome",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mordor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/mordor.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "DolGuldur",
+      "type": "structure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dol_guldur",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/world/features/DolGuldurFeature.java",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/dol_guldur.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/dol_guldur_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/dol_guldur.json"
+        ]
+      },
+      "path": "~/Structures"
     }
   ],
   "variable_elements": [],
@@ -770,6 +815,14 @@
       ],
       "category": "hostile",
       "subtitle": ""
+    },
+    {
+      "name": "gollum",
+      "files": [
+        "gollum"
+      ],
+      "category": "music",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -814,6 +867,8 @@
       "subtitles.mistymountains": "",
       "item.the_hobbit_mod.mithril_ingot": "Mithril Ingot",
       "item.the_hobbit_mod.orcrist": "Orcrist",
+      "biome.the_hobbit_mod.mordor": "Mordor",
+      "subtitles.gollum": "",
       "advancements.mithril.title": "Mithril!",
       "item.the_hobbit_mod.sting": "Sting",
       "item.the_hobbit_mod.mithril_pickaxe": "Mithril Pickaxe",

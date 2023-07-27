@@ -2,26 +2,34 @@
   "_fv": 43,
   "_type": "biome",
   "definition": {
-    "name": "Dragon Burned Field",
+    "name": "Mordor",
     "groundBlock": {
-      "value": "Blocks.GRASS"
+      "value": "Blocks.BASALT"
     },
     "undergroundBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "Blocks.BLACKSTONE"
     },
     "underwaterBlock": {
-      "value": ""
+      "value": "Blocks.LAVA"
     },
     "airColor": {
-      "value": -16777216,
+      "value": -3381760,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -10066330,
+      "value": -3381760,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -13421773,
+      "value": -26368,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -65536,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -65536,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -31,7 +39,7 @@
       "value": ""
     },
     "music": {
-      "value": "CUSTOM:smaug"
+      "value": "CUSTOM:gollum"
     },
     "moodSound": {
       "value": ""
@@ -39,33 +47,33 @@
     "moodSoundDelay": 6000,
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "LAND_LAVA"
+      "value": "PORTAL"
     },
     "particlesProbability": 0.5,
-    "rainingPossibility": 0.19999999999999998,
-    "temperature": 1.5,
+    "rainingPossibility": 0.0,
+    "temperature": 2.0,
     "spawnBiome": true,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.15,
-      "max": 0.5
+      "min": 0.3,
+      "max": 1.0
     },
     "genHumidity": {
-      "min": -1.1600000000000001,
-      "max": -0.040000000000000036
+      "min": 0.0,
+      "max": 1.0
     },
     "genContinentalness": {
-      "min": -0.19,
+      "min": 0.0,
       "max": 1.0
     },
     "genErosion": {
-      "min": -0.78,
-      "max": 0.375
+      "min": -1.0,
+      "max": 1.0
     },
     "genWeirdness": {
-      "min": -0.8018289305043194,
-      "max": 0.31817106949568075
+      "min": -1.0,
+      "max": 1.0
     },
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",
@@ -85,17 +93,14 @@
     },
     "defaultFeatures": [
       "Caves",
-      "Ores",
-      "AmethystGeodes",
-      "ForestGrass",
-      "DefaultFlowers"
+      "Ores"
     ],
     "spawnStronghold": true,
-    "spawnMineshaft": true,
+    "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": true,
     "villageType": "none",
-    "spawnWoodlandMansion": false,
+    "spawnWoodlandMansion": true,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
     "spawnSwampHut": false,
@@ -107,7 +112,7 @@
     "oceanRuinType": "NONE",
     "spawnNetherBridge": false,
     "spawnNetherFossil": false,
-    "spawnBastionRemnant": false,
+    "spawnBastionRemnant": true,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
     "spawnEntries": []

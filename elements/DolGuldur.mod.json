@@ -2,13 +2,13 @@
   "_fv": 43,
   "_type": "structure",
   "definition": {
-    "structure": "orc_tunnel",
+    "structure": "dol_guldur",
     "randomlyRotateStructure": false,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 15000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
-    "spawnLocation": "Underground",
+    "spawnLocation": "Ground",
     "spawnHeightOffset": 0,
     "spawnXOffset": 0,
     "spawnZOffset": 0,
@@ -16,7 +16,11 @@
       "Surface"
     ],
     "restrictionBlocks": [],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Mordor"
+      }
+    ],
     "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }

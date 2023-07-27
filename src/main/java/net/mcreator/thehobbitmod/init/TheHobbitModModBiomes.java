@@ -51,22 +51,20 @@ public class TheHobbitModModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					parameters.add(new Pair<>(
-							new Climate.ParameterPoint(Climate.Parameter.span(-0.7333333333f, 0.4666666667f), Climate.Parameter.span(-0.4f, 0.8f), Climate.Parameter.span(-0.06f, 1.14f), Climate.Parameter.span(0.3f, 1.5f),
-									Climate.Parameter.point(0.0f), Climate.Parameter.span(0.0489123482f, 1.2489123482f), 0),
-							biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("the_hobbit_mod", "elven_forest")))));
-					parameters.add(new Pair<>(
-							new Climate.ParameterPoint(Climate.Parameter.span(-0.7333333333f, 0.4666666667f), Climate.Parameter.span(-0.4f, 0.8f), Climate.Parameter.span(-0.06f, 1.14f), Climate.Parameter.span(0.3f, 1.5f),
-									Climate.Parameter.point(1.0f), Climate.Parameter.span(0.0489123482f, 1.2489123482f), 0),
-							biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("the_hobbit_mod", "elven_forest")))));
-					parameters.add(new Pair<>(
-							new Climate.ParameterPoint(Climate.Parameter.span(0.1066666667f, 1.2266666667f), Climate.Parameter.span(-1.16f, -0.04f), Climate.Parameter.span(-0.05f, 1.07f), Climate.Parameter.span(0.04f, 1.16f),
-									Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.8018289305f, 0.3181710695f), 0),
-							biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("the_hobbit_mod", "dragon_burned_field")))));
-					parameters.add(new Pair<>(
-							new Climate.ParameterPoint(Climate.Parameter.span(0.1066666667f, 1.2266666667f), Climate.Parameter.span(-1.16f, -0.04f), Climate.Parameter.span(-0.05f, 1.07f), Climate.Parameter.span(0.04f, 1.16f),
-									Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.8018289305f, 0.3181710695f), 0),
-							biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("the_hobbit_mod", "dragon_burned_field")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.45f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(-1f, 0.45f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(0f, 0.5f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("the_hobbit_mod", "elven_forest")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.45f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(-1f, 0.45f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(0f, 0.5f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("the_hobbit_mod", "elven_forest")))));
+					parameters.add(
+							new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.15f, 0.5f), Climate.Parameter.span(-1.16f, -0.04f), Climate.Parameter.span(-0.19f, 1f), Climate.Parameter.span(-0.78f, 0.375f), Climate.Parameter.point(0.0f),
+									Climate.Parameter.span(-0.8018289305f, 0.3181710695f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("the_hobbit_mod", "dragon_burned_field")))));
+					parameters.add(
+							new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.15f, 0.5f), Climate.Parameter.span(-1.16f, -0.04f), Climate.Parameter.span(-0.19f, 1f), Climate.Parameter.span(-0.78f, 0.375f), Climate.Parameter.point(1.0f),
+									Climate.Parameter.span(-0.8018289305f, 0.3181710695f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("the_hobbit_mod", "dragon_burned_field")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("the_hobbit_mod", "mordor")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("the_hobbit_mod", "mordor")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
@@ -81,6 +79,8 @@ public class TheHobbitModModBiomes {
 								Blocks.DIRT.defaultBlockState()));
 						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("the_hobbit_mod", "dragon_burned_field")), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.STONE.defaultBlockState(),
 								Blocks.STONE.defaultBlockState()));
+						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("the_hobbit_mod", "mordor")), Blocks.BASALT.defaultBlockState(), Blocks.BLACKSTONE.defaultBlockState(),
+								Blocks.LAVA.defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(SurfaceRules.RuleSource[]::new)), noiseGeneratorSettings.spawnTarget(), noiseGeneratorSettings.seaLevel(),
 								noiseGeneratorSettings.disableMobGeneration(), noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());

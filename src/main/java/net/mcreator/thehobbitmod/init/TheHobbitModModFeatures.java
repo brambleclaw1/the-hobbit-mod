@@ -16,6 +16,7 @@ import net.mcreator.thehobbitmod.world.features.ores.BurningMagmaFeature;
 import net.mcreator.thehobbitmod.world.features.OrcTunnelFeature;
 import net.mcreator.thehobbitmod.world.features.HobbitHoleFeature;
 import net.mcreator.thehobbitmod.world.features.ElvenVillageFeature;
+import net.mcreator.thehobbitmod.world.features.DolGuldurFeature;
 import net.mcreator.thehobbitmod.world.features.AbandonedDwarfMineFeature;
 import net.mcreator.thehobbitmod.TheHobbitModMod;
 
@@ -28,4 +29,5 @@ public class TheHobbitModModFeatures {
 	public static final RegistryObject<Feature<?>> MITHRIL_ORE = REGISTRY.register("mithril_ore", MithrilOreFeature::new);
 	public static final RegistryObject<Feature<?>> ABANDONED_DWARF_MINE = REGISTRY.register("abandoned_dwarf_mine", AbandonedDwarfMineFeature::new);
 	public static final RegistryObject<Feature<?>> ELVEN_VILLAGE = REGISTRY.register("elven_village", ElvenVillageFeature::new);
+	public static final RegistryObject<Feature<?>> DOL_GULDUR = REGISTRY.register("dol_guldur", DolGuldurFeature::new);
 }

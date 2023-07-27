@@ -46,5 +46,13 @@
         "stream": false
       }
     ]
+  },
+  "gollum": {
+    "sounds": [
+      {
+        "name": "the_hobbit_mod:gollum",
+        "stream": true
+      }
+    ]
   }
 }
