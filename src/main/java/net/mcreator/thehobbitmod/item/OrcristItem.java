@@ -32,6 +32,6 @@ public class OrcristItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 3, 0f, new Item.Properties());
+		}, 3, -2.6f, new Item.Properties());
 	}
 }

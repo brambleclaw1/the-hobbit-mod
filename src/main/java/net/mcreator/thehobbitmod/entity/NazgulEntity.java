@@ -29,8 +29,6 @@ import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
@@ -39,8 +37,6 @@ import net.mcreator.thehobbitmod.init.TheHobbitModModItems;
 import net.mcreator.thehobbitmod.init.TheHobbitModModEntities;
 
 public class NazgulEntity extends Monster {
-	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.RED, ServerBossEvent.BossBarOverlay.PROGRESS);
-
 	public NazgulEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(TheHobbitModModEntities.NAZGUL.get(), world);
 	}
@@ -139,29 +135,6 @@ public class NazgulEntity extends Monster {
 		if (source.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(source, amount);
-	}
-
-	@Override
-	public boolean canChangeDimensions() {
-		return false;
-	}
-
-	@Override
-	public void startSeenByPlayer(ServerPlayer player) {
-		super.startSeenByPlayer(player);
-		this.bossInfo.addPlayer(player);
-	}
-
-	@Override
-	public void stopSeenByPlayer(ServerPlayer player) {
-		super.stopSeenByPlayer(player);
-		this.bossInfo.removePlayer(player);
-	}
-
-	@Override
-	public void customServerAiStep() {
-		super.customServerAiStep();
-		this.bossInfo.setProgress(this.getHealth() / this.getMaxHealth());
 	}
 
 	public static void init() {
