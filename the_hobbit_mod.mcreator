@@ -764,6 +764,59 @@
         ]
       },
       "path": "~/Structures"
+    },
+    {
+      "name": "SevenRings",
+      "type": "item",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seven_rings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/SevenRingsItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/seven_rings.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SevenRingsItemInHandTick",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seven_rings_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/procedures/SevenRingsItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "DwarfMineLoot",
+      "type": "loottable",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_mine_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/loot_tables/chests/dwarf_mine_loot.json"
+        ]
+      },
+      "path": "~/Loot Tables"
     }
   ],
   "variable_elements": [],
@@ -869,6 +922,7 @@
       "item.the_hobbit_mod.orcrist": "Orcrist",
       "biome.the_hobbit_mod.mordor": "Mordor",
       "subtitles.gollum": "",
+      "item.the_hobbit_mod.seven_rings": "The Seven Rings",
       "advancements.mithril.title": "Mithril!",
       "item.the_hobbit_mod.sting": "Sting",
       "item.the_hobbit_mod.mithril_pickaxe": "Mithril Pickaxe",

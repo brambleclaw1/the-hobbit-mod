@@ -31,7 +31,7 @@ public class AbandonedDwarfMineFeature extends Feature<NoneFeatureConfiguration>
 		if (!generate_dimensions.contains(context.level().getLevel().dimension()))
 			return false;
 		if (template == null)
-			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("the_hobbit_mod", "abandoned_dwarf_mine"));
+			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("the_hobbit_mod", "dwarfmine"));
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;
