@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:blackstone"
+    },
+    "title": {
+      "translate": "advancements.one_does_not_simply.title"
+    },
+    "description": {
+      "translate": "advancements.one_does_not_simply.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "one_does_not_simply": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "the_hobbit_mod:mordor"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "the_hobbit_mod:the_hobbit_mod_install"
+}

@@ -4,7 +4,7 @@
   "definition": {
     "name": "Misty Mountains",
     "texture": "mistymountains",
-    "description": "Misty Mountains song from The Hobbit.",
+    "description": "Misty Mountains",
     "creativeTab": {
       "value": "CUSTOM:TheHobbitMod"
     },
@@ -13,7 +13,7 @@
     "music": {
       "value": "CUSTOM:misty_mountains"
     },
-    "lengthInTicks": 4800,
+    "lengthInTicks": 3600,
     "analogOutput": 0
   }
 }

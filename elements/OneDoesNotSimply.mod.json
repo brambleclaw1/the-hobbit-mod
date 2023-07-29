@@ -1,0 +1,25 @@
+{
+  "_fv": 43,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "One does not simply...",
+    "achievementDescription": "Walk into Mordor.",
+    "achievementIcon": {
+      "value": "Blocks.BLACKSTONE"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:TheHobbitModInstall"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"biome_entered\" x=\"32\" y=\"47\"><field name=\"biome\">CUSTOM:Mordor</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}
