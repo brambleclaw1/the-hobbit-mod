@@ -845,6 +845,41 @@
         ]
       },
       "path": "~/Advancements"
+    },
+    {
+      "name": "ThreeRings",
+      "type": "item",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "three_rings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/ThreeRingsItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/three_rings.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ThreeRingsItemInHandTick",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "three_rings_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/procedures/ThreeRingsItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -928,7 +963,7 @@
       "item.the_hobbit_mod.pipe": "Pipe",
       "subtitles.get_ring": "",
       "subtitles.lothlorien": "",
-      "item.the_hobbit_mod.the_one_ring": "The One Ring",
+      "item.the_hobbit_mod.the_one_ring": "Three Rings",
       "advancements.mithril.descr": "Mine your first mithril.",
       "item.the_hobbit_mod.nazgul_spawn_egg": "Nazgul Spawn Egg",
       "item.the_hobbit_mod.heated_mithril": "Heated Mithril",
@@ -954,6 +989,7 @@
       "biome.the_hobbit_mod.mordor": "Mordor",
       "subtitles.gollum": "",
       "item.the_hobbit_mod.seven_rings": "The Seven Rings",
+      "item.the_hobbit_mod.three_rings": "The One Ring",
       "advancements.mithril.title": "Mithril!",
       "item.the_hobbit_mod.sting": "Sting",
       "item.the_hobbit_mod.mithril_pickaxe": "Mithril Pickaxe",

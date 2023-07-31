@@ -41,6 +41,7 @@ public class TheHobbitModModTabs {
 					tabData.accept(TheHobbitModModItems.NINE_RINGS.get());
 					tabData.accept(TheHobbitModModItems.NAZGUL_SPAWN_EGG.get());
 					tabData.accept(TheHobbitModModItems.SEVEN_RINGS.get());
+					tabData.accept(TheHobbitModModItems.THREE_RINGS.get());
 				})
 
 		);
