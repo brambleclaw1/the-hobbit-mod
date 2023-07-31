@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "the_ring",
     "customModelName": "Normal",
-    "name": "Three Rings",
+    "name": "The One Ring",
     "rarity": "EPIC",
     "creativeTab": {
       "value": "CUSTOM:TheHobbitMod"
@@ -22,13 +22,16 @@
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "enableMeleeDamage": false,
+    "enableMeleeDamage": true,
     "damageVsEntity": 20.0,
     "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onItemInUseTick": {
+      "name": "TheOneRingItemInHandTick"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

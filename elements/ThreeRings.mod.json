@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "three_rings",
     "customModelName": "Normal",
-    "name": "The One Ring",
+    "name": "Three Rings",
     "rarity": "EPIC",
     "creativeTab": {
       "value": "CUSTOM:TheHobbitMod"
@@ -22,7 +22,7 @@
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "enableMeleeDamage": true,
+    "enableMeleeDamage": false,
     "damageVsEntity": 20.0,
     "specialInfo": [],
     "hasGlow": false,
