@@ -13,7 +13,6 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 
 import net.mcreator.thehobbitmod.world.features.ores.MithrilOreFeature;
 import net.mcreator.thehobbitmod.world.features.ores.BurningMagmaFeature;
-import net.mcreator.thehobbitmod.world.features.RuinsFeature;
 import net.mcreator.thehobbitmod.world.features.OrcTunnelFeature;
 import net.mcreator.thehobbitmod.world.features.HobbitHoleFeature;
 import net.mcreator.thehobbitmod.world.features.ElvenVillageFeature;
@@ -31,5 +30,4 @@ public class TheHobbitModModFeatures {
 	public static final RegistryObject<Feature<?>> ABANDONED_DWARF_MINE = REGISTRY.register("abandoned_dwarf_mine", AbandonedDwarfMineFeature::new);
 	public static final RegistryObject<Feature<?>> ELVEN_VILLAGE = REGISTRY.register("elven_village", ElvenVillageFeature::new);
 	public static final RegistryObject<Feature<?>> DOL_GULDUR = REGISTRY.register("dol_guldur", DolGuldurFeature::new);
-	public static final RegistryObject<Feature<?>> RUINS = REGISTRY.register("ruins", RuinsFeature::new);
 }
