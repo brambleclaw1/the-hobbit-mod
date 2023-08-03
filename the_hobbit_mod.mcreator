@@ -944,6 +944,22 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "HobbitPlains",
+      "type": "biome",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hobbit_plains",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/hobbit_plains_tree.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/hobbit_plains_tree.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/hobbit_plains.json"
+        ]
+      },
+      "path": "~/Biomes"
     }
   ],
   "variable_elements": [],
@@ -1016,6 +1032,7 @@
       "subtitles.feast_of_starlight": "",
       "entity.the_hobbit_mod.nazgul": "Nazgul",
       "advancements.the_bane_of_men.title": "The Bane Of Men",
+      "biome.the_hobbit_mod.hobbit_plains": "Hobbit Plains",
       "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
       "subtitles.smaug": "",
       "subtitles.dreaming_of_bag_end": "",
