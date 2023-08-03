@@ -10,6 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 
 public class MistyMountainsItem extends RecordItem {
 	public MistyMountainsItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_hobbit_mod:misty_mountains")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 4800);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_hobbit_mod:misty_mountains")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 3600);
 	}
 }

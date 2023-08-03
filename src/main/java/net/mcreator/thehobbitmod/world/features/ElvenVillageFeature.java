@@ -30,12 +30,12 @@ public class ElvenVillageFeature extends Feature<NoneFeatureConfiguration> {
 		if (!generate_dimensions.contains(context.level().getLevel().dimension()))
 			return false;
 		if (template == null)
-			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("the_hobbit_mod", "elf_house"));
+			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("the_hobbit_mod", "hobbit_hole"));
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;
-		if ((context.random().nextInt(1000000) + 1) <= 40000) {
-			int count = context.random().nextInt(6) + 3;
+		if ((context.random().nextInt(1000000) + 1) <= 2000) {
+			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);

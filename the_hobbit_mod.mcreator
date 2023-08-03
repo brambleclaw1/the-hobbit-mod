@@ -719,6 +719,181 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "DolGuldurLoot",
+      "type": "loottable",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dol_guldur_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/loot_tables/chests/dol_guldur_loot.json"
+        ]
+      },
+      "path": "~/Loot Tables"
+    },
+    {
+      "name": "Mordor",
+      "type": "biome",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mordor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/mordor.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "DolGuldur",
+      "type": "structure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dol_guldur",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/world/features/DolGuldurFeature.java",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/dol_guldur.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/dol_guldur_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/dol_guldur.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "SevenRings",
+      "type": "item",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seven_rings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/SevenRingsItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/seven_rings.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SevenRingsItemInHandTick",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seven_rings_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/procedures/SevenRingsItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "DwarfMineLoot",
+      "type": "loottable",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_mine_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/loot_tables/chests/dwarf_mine_loot.json"
+        ]
+      },
+      "path": "~/Loot Tables"
+    },
+    {
+      "name": "OneDoesNotSimply",
+      "type": "achievement",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_does_not_simply",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/one_does_not_simply.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "TheBaneOfMen",
+      "type": "achievement",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_bane_of_men",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/the_bane_of_men.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ThreeRings",
+      "type": "item",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "three_rings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/ThreeRingsItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/three_rings.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ThreeRingsItemInHandTick",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "three_rings_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/procedures/ThreeRingsItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ThreeRingsRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "three_rings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/three_rings_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -770,6 +945,14 @@
       ],
       "category": "hostile",
       "subtitle": ""
+    },
+    {
+      "name": "gollum",
+      "files": [
+        "gollum"
+      ],
+      "category": "music",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -782,6 +965,7 @@
       "item.the_hobbit_mod.mithril_sword": "Mithril Sword",
       "subtitles.feast_of_starlight": "",
       "entity.the_hobbit_mod.nazgul": "Nazgul",
+      "advancements.the_bane_of_men.title": "The Bane Of Men",
       "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
       "subtitles.smaug": "",
       "subtitles.dreaming_of_bag_end": "",
@@ -805,8 +989,9 @@
       "block.the_hobbit_mod.mithril_ore": "Mithril Ore",
       "block.the_hobbit_mod.burning_magma": "Burning Magma",
       "item.the_hobbit_mod.mithril_armor_leggings": "Mithril Leggings",
-      "item.the_hobbit_mod.misty_mountains.desc": "Misty Mountains song from The Hobbit.",
+      "item.the_hobbit_mod.misty_mountains.desc": "Misty Mountains",
       "subtitles.moon_runes": "",
+      "advancements.one_does_not_simply.title": "One does not simply...",
       "item.the_hobbit_mod.mithril_axe": "Mithril Axe",
       "subtitles.the_adventure_begins": "",
       "item.the_hobbit_mod.raw_mithril": "Raw Mithril",
@@ -814,10 +999,16 @@
       "subtitles.mistymountains": "",
       "item.the_hobbit_mod.mithril_ingot": "Mithril Ingot",
       "item.the_hobbit_mod.orcrist": "Orcrist",
+      "advancements.one_does_not_simply.descr": "Walk into Mordor.",
+      "biome.the_hobbit_mod.mordor": "Mordor",
+      "subtitles.gollum": "",
+      "item.the_hobbit_mod.seven_rings": "The Seven Rings",
+      "item.the_hobbit_mod.three_rings": "Three Rings",
       "advancements.mithril.title": "Mithril!",
       "item.the_hobbit_mod.sting": "Sting",
       "item.the_hobbit_mod.mithril_pickaxe": "Mithril Pickaxe",
       "subtitles.misty_mountains": "",
+      "advancements.the_bane_of_men.descr": "Hold the Nine Ring for the first time.",
       "subtitles.nazgul": "",
       "item_group.the_hobbit_mod.the_hobbit_mod": "The Hobbit Mod",
       "advancements.its_worth_is_greater.descr": "Make a Mithril Chestplate.",
