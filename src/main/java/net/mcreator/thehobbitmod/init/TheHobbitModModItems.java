@@ -13,8 +13,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.thehobbitmod.item.ThreeRingsItem;
 import net.mcreator.thehobbitmod.item.TheOneRingItem;
+import net.mcreator.thehobbitmod.item.TarnishedRingItem;
 import net.mcreator.thehobbitmod.item.StingItem;
+import net.mcreator.thehobbitmod.item.SevenRingsItem;
 import net.mcreator.thehobbitmod.item.RawMithrilItem;
 import net.mcreator.thehobbitmod.item.PipeItem;
 import net.mcreator.thehobbitmod.item.OrcristItem;
@@ -54,6 +57,9 @@ public class TheHobbitModModItems {
 	public static final RegistryObject<Item> MISTY_MOUNTAINS = REGISTRY.register("misty_mountains", () -> new MistyMountainsItem());
 	public static final RegistryObject<Item> NINE_RINGS = REGISTRY.register("nine_rings", () -> new NineRingsItem());
 	public static final RegistryObject<Item> NAZGUL_SPAWN_EGG = REGISTRY.register("nazgul_spawn_egg", () -> new ForgeSpawnEggItem(TheHobbitModModEntities.NAZGUL, -16777216, -13421773, new Item.Properties()));
+	public static final RegistryObject<Item> SEVEN_RINGS = REGISTRY.register("seven_rings", () -> new SevenRingsItem());
+	public static final RegistryObject<Item> THREE_RINGS = REGISTRY.register("three_rings", () -> new ThreeRingsItem());
+	public static final RegistryObject<Item> TARNISHED_RING = REGISTRY.register("tarnished_ring", () -> new TarnishedRingItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

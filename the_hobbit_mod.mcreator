@@ -530,9 +530,9 @@
       "registry_name": "elven_forest",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/elven_forest_tree.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json"
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json"
         ]
       },
       "path": "~/Biomes"
@@ -894,6 +894,56 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "MiddleEarth",
+      "type": "dimension",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "middle_earth",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/dimension_type/middle_earth.json",
+          "src/main/resources/data/the_hobbit_mod/dimension/middle_earth.json",
+          "src/main/java/net/mcreator/thehobbitmod/world/dimension/MiddleEarthDimension.java"
+        ]
+      }
+    },
+    {
+      "name": "TarnishedRing",
+      "type": "item",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tarnished_ring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/tarnished_ring.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/TarnishedRingItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "TarnishedRingRightclicked",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tarnished_ring_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/procedures/TarnishedRingRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -989,6 +1039,7 @@
       "block.the_hobbit_mod.mithril_ore": "Mithril Ore",
       "block.the_hobbit_mod.burning_magma": "Burning Magma",
       "item.the_hobbit_mod.mithril_armor_leggings": "Mithril Leggings",
+      "item.the_hobbit_mod.tarnished_ring": "Tarnished Ring",
       "item.the_hobbit_mod.misty_mountains.desc": "Misty Mountains",
       "subtitles.moon_runes": "",
       "advancements.one_does_not_simply.title": "One does not simply...",

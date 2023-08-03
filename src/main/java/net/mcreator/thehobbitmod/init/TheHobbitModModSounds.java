@@ -21,4 +21,5 @@ public class TheHobbitModModSounds {
 	public static final RegistryObject<SoundEvent> MISTY_MOUNTAINS = REGISTRY.register("misty_mountains", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_hobbit_mod", "misty_mountains")));
 	public static final RegistryObject<SoundEvent> NAZGUL = REGISTRY.register("nazgul", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_hobbit_mod", "nazgul")));
 	public static final RegistryObject<SoundEvent> NAZGUL_DEAD = REGISTRY.register("nazgul_dead", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_hobbit_mod", "nazgul_dead")));
+	public static final RegistryObject<SoundEvent> GOLLUM = REGISTRY.register("gollum", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_hobbit_mod", "gollum")));
 }
