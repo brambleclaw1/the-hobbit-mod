@@ -14,12 +14,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import java.util.Set;
 
 public class AbandonedDwarfMineFeature extends Feature<NoneFeatureConfiguration> {
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_hobbit_mod:middle_earth")));
 	private StructureTemplate template = null;
 
 	public AbandonedDwarfMineFeature() {

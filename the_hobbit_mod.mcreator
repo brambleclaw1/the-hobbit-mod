@@ -960,6 +960,23 @@
         ]
       },
       "path": "~/Biomes"
+    },
+    {
+      "name": "Ruins",
+      "type": "structure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruins",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/ruins.json",
+          "src/main/java/net/mcreator/thehobbitmod/world/features/RuinsFeature.java",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/ruins.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/ruins_biome_modifier.json"
+        ]
+      },
+      "path": "~/Structures"
     }
   ],
   "variable_elements": [],

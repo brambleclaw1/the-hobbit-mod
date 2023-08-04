@@ -15,13 +15,14 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import java.util.Set;
 import java.util.List;
 
 public class HobbitHoleFeature extends Feature<NoneFeatureConfiguration> {
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_hobbit_mod:middle_earth")));
 	private final List<Block> base_blocks;
 	private StructureTemplate template = null;
 

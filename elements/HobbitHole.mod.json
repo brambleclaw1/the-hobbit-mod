@@ -13,7 +13,7 @@
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
-      "Surface"
+      "CUSTOM:MiddleEarth"
     ],
     "restrictionBlocks": [
       {
@@ -22,10 +22,7 @@
     ],
     "restrictionBiomes": [
       {
-        "value": "plains"
-      },
-      {
-        "value": "forest"
+        "value": "CUSTOM:HobbitPlains"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"
