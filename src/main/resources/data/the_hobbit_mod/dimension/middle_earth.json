@@ -36,24 +36,24 @@
           "biome": "the_hobbit_mod:dragon_burned_field",
           "parameters": {
             "temperature": [
-              -0.15,
-              0.5
+              0.1066666667,
+              1.2266666667
             ],
             "humidity": [
               -1.16,
               -0.04
             ],
             "continentalness": [
-              -0.19,
-              1
+              -0.05,
+              1.07
             ],
             "weirdness": [
               -0.8018289305,
               0.3181710695
             ],
             "erosion": [
-              -0.78,
-              0.375
+              0.04,
+              1.16
             ],
             "depth": 0,
             "offset": 0
@@ -63,24 +63,24 @@
           "biome": "the_hobbit_mod:elven_forest",
           "parameters": {
             "temperature": [
-              -0.45,
-              1
+              -0.7333333333,
+              0.4666666667
             ],
             "humidity": [
-              -1,
-              1
+              -0.4,
+              0.8
             ],
             "continentalness": [
-              -0.11,
-              1
+              -0.06,
+              1.14
             ],
             "weirdness": [
-              0,
-              0.5
+              0.0489123482,
+              1.2489123482
             ],
             "erosion": [
-              -1,
-              0.45
+              0.3,
+              1.5
             ],
             "depth": 0,
             "offset": 0
