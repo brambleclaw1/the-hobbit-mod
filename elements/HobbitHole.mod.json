@@ -5,7 +5,7 @@
     "structure": "hobbit_hole",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 2000,
+    "spawnProbability": 20000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -15,11 +15,7 @@
     "spawnWorldTypes": [
       "CUSTOM:MiddleEarth"
     ],
-    "restrictionBlocks": [
-      {
-        "value": "Blocks.GRASS"
-      }
-    ],
+    "restrictionBlocks": [],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:HobbitPlains"

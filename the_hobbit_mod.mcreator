@@ -202,10 +202,10 @@
       "registry_name": "hobbit_hole",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/world/features/HobbitHoleFeature.java",
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/hobbit_hole.json",
           "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/hobbit_hole_biome_modifier.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/hobbit_hole.json"
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/hobbit_hole.json",
+          "src/main/java/net/mcreator/thehobbitmod/world/features/HobbitHoleFeature.java",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/hobbit_hole.json"
         ]
       },
       "path": "~/Structures"
@@ -285,8 +285,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/orc_tunnel.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/orc_tunnel.json",
           "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/orc_tunnel_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/orc_tunnel.json",
           "src/main/java/net/mcreator/thehobbitmod/world/features/OrcTunnelFeature.java"
         ]
       },
@@ -484,10 +484,10 @@
       "registry_name": "orc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/entity/OrcEntity.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/orc_spawn_egg.json",
           "src/main/java/net/mcreator/thehobbitmod/client/renderer/OrcRenderer.java",
-          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/orc_biome_modifier.json"
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/orc_biome_modifier.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/orc_spawn_egg.json",
+          "src/main/java/net/mcreator/thehobbitmod/entity/OrcEntity.java"
         ]
       },
       "path": "~/Entities"
@@ -588,10 +588,10 @@
       "registry_name": "abandoned_dwarf_mine",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/world/features/AbandonedDwarfMineFeature.java",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/abandoned_dwarf_mine.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/abandoned_dwarf_mine_biome_modifier.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/abandoned_dwarf_mine.json",
-          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/abandoned_dwarf_mine_biome_modifier.json"
+          "src/main/java/net/mcreator/thehobbitmod/world/features/AbandonedDwarfMineFeature.java"
         ]
       },
       "path": "~/Structures"
@@ -757,9 +757,9 @@
       "registry_name": "dol_guldur",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/world/features/DolGuldurFeature.java",
           "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/dol_guldur.json",
           "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/dol_guldur_biome_modifier.json",
+          "src/main/java/net/mcreator/thehobbitmod/world/features/DolGuldurFeature.java",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/dol_guldur.json"
         ]
       },
@@ -970,13 +970,41 @@
       "registry_name": "ruins",
       "metadata": {
         "files": [
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/ruins_biome_modifier.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/ruins.json",
-          "src/main/java/net/mcreator/thehobbitmod/world/features/RuinsFeature.java",
           "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/ruins.json",
-          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/ruins_biome_modifier.json"
+          "src/main/java/net/mcreator/thehobbitmod/world/features/RuinsFeature.java"
         ]
       },
       "path": "~/Structures"
+    },
+    {
+      "name": "ElfFriend",
+      "type": "achievement",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elf_friend",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/elf_friend.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "TheQuietFolk",
+      "type": "achievement",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_quiet_folk",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/the_quiet_folk.json"
+        ]
+      },
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [],
@@ -1049,6 +1077,7 @@
       "subtitles.feast_of_starlight": "",
       "entity.the_hobbit_mod.nazgul": "Nazgul",
       "advancements.the_bane_of_men.title": "The Bane Of Men",
+      "advancements.elf_friend.descr": "Enter a Elvish Forest.",
       "biome.the_hobbit_mod.hobbit_plains": "Hobbit Plains",
       "subtitles.smaug": "",
       "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
@@ -1066,10 +1095,11 @@
       "advancements.mithril.descr": "Mine your first mithril.",
       "item.the_hobbit_mod.heated_mithril": "Heated Mithril",
       "advancements.my_precious.descr": "Find the One Ring",
+      "advancements.the_quiet_folk.title": "The Quiet Folk",
       "item.the_hobbit_mod.orc_spawn_egg": "Orc Spawn Egg",
       "item.the_hobbit_mod.nine_rings": "The Nine Rings",
       "item.the_hobbit_mod.mithril_armor_helmet": "Mithril Helmet",
-      "advancements.the_hobbit_mod_install.descr": "Install the Hobbit Mod",
+      "advancements.the_hobbit_mod_install.descr": "Enter Middle Earth",
       "block.the_hobbit_mod.mithril_ore": "Mithril Ore",
       "block.the_hobbit_mod.burning_magma": "Burning Magma",
       "item.the_hobbit_mod.mithril_armor_leggings": "Mithril Leggings",
@@ -1088,6 +1118,8 @@
       "biome.the_hobbit_mod.mordor": "Mordor",
       "subtitles.gollum": "",
       "item.the_hobbit_mod.seven_rings": "The Seven Rings",
+      "advancements.elf_friend.title": "Elf-Friend",
+      "advancements.the_quiet_folk.descr": "Enter a Hobbit Plains biome.",
       "item.the_hobbit_mod.three_rings": "Three Rings",
       "advancements.mithril.title": "Mithril!",
       "item.the_hobbit_mod.sting": "Sting",
@@ -1098,7 +1130,7 @@
       "item_group.the_hobbit_mod.the_hobbit_mod": "The Hobbit Mod",
       "advancements.its_worth_is_greater.descr": "Make a Mithril Chestplate.",
       "biome.the_hobbit_mod.dragon_burned_field": "Dragon Burned Field",
-      "advancements.the_hobbit_mod_install.title": "The Hobbit Mod Install",
+      "advancements.the_hobbit_mod_install.title": "The Hobbit Mod",
       "advancements.my_precious.title": "My Precious!",
       "item.the_hobbit_mod.misty_mountains": "Misty Mountains"
     }

@@ -115,7 +115,14 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:DragonBurnedField"
+      },
+      {
+        "value": "CUSTOM:Mordor"
+      }
+    ],
     "spawnInDungeons": true
   }
 }

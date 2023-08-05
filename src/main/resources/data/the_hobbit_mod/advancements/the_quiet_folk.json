@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:grass_block"
+    },
+    "title": {
+      "translate": "advancements.the_quiet_folk.title"
+    },
+    "description": {
+      "translate": "advancements.the_quiet_folk.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_quiet_folk": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "the_hobbit_mod:hobbit_plains"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "the_hobbit_mod:the_hobbit_mod_install"
+}

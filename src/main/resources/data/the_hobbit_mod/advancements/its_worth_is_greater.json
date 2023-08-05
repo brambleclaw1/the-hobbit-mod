@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.its_worth_is_greater.descr"
     },
-    "frame": "challenge",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

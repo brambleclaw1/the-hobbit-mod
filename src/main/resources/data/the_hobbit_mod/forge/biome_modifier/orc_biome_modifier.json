@@ -1,8 +1,9 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "the_hobbit_mod:mordor",
+    "the_hobbit_mod:dragon_burned_field"
+  ],
   "spawners": {
     "type": "the_hobbit_mod:orc",
     "weight": 60,
