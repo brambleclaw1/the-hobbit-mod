@@ -4,7 +4,7 @@
   "definition": {
     "structure": "dwarfmine",
     "randomlyRotateStructure": true,
-    "surfaceDetectionType": "First motion blocking block",
+    "surfaceDetectionType": "First block",
     "spawnProbability": 20000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,

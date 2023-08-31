@@ -2,8 +2,8 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "The Hobbit Mod Install",
-    "achievementDescription": "Install the Hobbit Mod",
+    "achievementName": "The Hobbit Mod",
+    "achievementDescription": "Enter Middle Earth",
     "achievementIcon": {
       "value": "CUSTOM:TheOneRing"
     },
@@ -20,6 +20,6 @@
     "parent": {
       "value": "No parent: root"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" x=\"39\" y=\"61\"><field name=\"dimension\">Surface</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" x=\"39\" y=\"61\"><field name=\"dimension\">CUSTOM:MiddleEarth</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

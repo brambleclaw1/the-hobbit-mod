@@ -3,9 +3,9 @@
   "_type": "structure",
   "definition": {
     "structure": "dol_guldur",
-    "randomlyRotateStructure": false,
+    "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 15000,
+    "spawnProbability": 30000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",

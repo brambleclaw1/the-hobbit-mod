@@ -977,6 +977,34 @@
         ]
       },
       "path": "~/Structures"
+    },
+    {
+      "name": "TheQuietFolk",
+      "type": "achievement",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_quiet_folk",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/the_quiet_folk.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ElfFriend",
+      "type": "achievement",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elf_friend",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/elf_friend.json"
+        ]
+      },
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [],
@@ -1111,11 +1139,11 @@
         "children": []
       },
       {
-        "name": "Recipes",
+        "name": "Biomes",
         "children": []
       },
       {
-        "name": "Blocks",
+        "name": "Loot Tables",
         "children": []
       },
       {
@@ -1123,19 +1151,11 @@
         "children": []
       },
       {
-        "name": "Structures",
-        "children": []
-      },
-      {
         "name": "Procedures",
         "children": []
       },
       {
-        "name": "Biomes",
-        "children": []
-      },
-      {
-        "name": "Advancements",
+        "name": "Recipes",
         "children": []
       },
       {
@@ -1143,7 +1163,15 @@
         "children": []
       },
       {
-        "name": "Loot Tables",
+        "name": "Structures",
+        "children": []
+      },
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "Blocks",
         "children": []
       }
     ]
@@ -1168,5 +1196,5 @@
     "modElementsPackage": "net.mcreator.thehobbitmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300335319
+  "mcreatorVersion": 202300224119
 }

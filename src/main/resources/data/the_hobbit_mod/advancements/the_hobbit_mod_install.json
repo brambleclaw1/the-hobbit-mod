@@ -19,7 +19,7 @@
     "the_hobbit_mod_install": {
       "trigger": "minecraft:changed_dimension",
       "conditions": {
-        "to": "minecraft:overworld"
+        "to": "the_hobbit_mod:middle_earth"
       }
     }
   }
