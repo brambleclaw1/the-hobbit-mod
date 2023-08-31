@@ -29,6 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.thehobbitmod.init.TheHobbitModModTabs;
 import net.mcreator.thehobbitmod.init.TheHobbitModModSounds;
 import net.mcreator.thehobbitmod.init.TheHobbitModModItems;
 import net.mcreator.thehobbitmod.init.TheHobbitModModFeatures;
@@ -54,9 +55,11 @@ public class TheHobbitModMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		TheHobbitModModSounds.REGISTRY.register(bus);
 		TheHobbitModModBlocks.REGISTRY.register(bus);
+
 		TheHobbitModModItems.REGISTRY.register(bus);
 		TheHobbitModModEntities.REGISTRY.register(bus);
 
+		TheHobbitModModTabs.REGISTRY.register(bus);
 		TheHobbitModModFeatures.REGISTRY.register(bus);
 
 	}

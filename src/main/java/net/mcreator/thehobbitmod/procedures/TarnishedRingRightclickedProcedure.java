@@ -18,9 +18,9 @@ public class TarnishedRingRightclickedProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof ServerPlayer _player && !_player.level.isClientSide()) {
+		if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_hobbit_mod:middle_earth"));
-			if (_player.level.dimension() == destinationType)
+			if (_player.level().dimension() == destinationType)
 				return;
 			ServerLevel nextLevel = _player.server.getLevel(destinationType);
 			if (nextLevel != null) {

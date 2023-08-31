@@ -115,5 +115,6 @@
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "the_hobbit_mod:chests/dwarf_mine_loot"
 }

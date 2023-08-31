@@ -43,7 +43,7 @@ public class NazgulEntity extends Monster {
 
 	public NazgulEntity(EntityType<NazgulEntity> type, Level world) {
 		super(type, world);
-		maxUpStep = 2f;
+		setMaxUpStep(2f);
 		xpReward = 15000;
 		setNoAi(false);
 		setPersistenceRequired();

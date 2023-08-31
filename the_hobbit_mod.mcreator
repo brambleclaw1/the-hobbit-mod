@@ -20,8 +20,8 @@
       "registry_name": "mithril_ingot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_ingot.json",
-          "src/main/java/net/mcreator/thehobbitmod/item/MithrilIngotItem.java"
+          "src/main/java/net/mcreator/thehobbitmod/item/MithrilIngotItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_ingot.json"
         ]
       },
       "path": "~/Items"
@@ -65,8 +65,8 @@
       "registry_name": "raw_mithril",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/raw_mithril.json",
-          "src/main/java/net/mcreator/thehobbitmod/item/RawMithrilItem.java"
+          "src/main/java/net/mcreator/thehobbitmod/item/RawMithrilItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/raw_mithril.json"
         ]
       },
       "path": "~/Items"
@@ -109,13 +109,13 @@
       "registry_name": "burning_magma",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/burning_magma.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/burning_magma.json",
-          "src/main/resources/assets/the_hobbit_mod/blockstates/burning_magma.json",
           "src/main/resources/assets/the_hobbit_mod/models/block/burning_magma.json",
-          "src/main/resources/assets/the_hobbit_mod/models/item/burning_magma.json",
           "src/main/java/net/mcreator/thehobbitmod/world/features/ores/BurningMagmaFeature.java",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/burning_magma.json",
           "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/burning_magma_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/burning_magma.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/burning_magma.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/burning_magma.json",
           "src/main/java/net/mcreator/thehobbitmod/block/BurningMagmaBlock.java"
         ]
       },
@@ -301,14 +301,14 @@
       "registry_name": "mithril_ore",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/block/MithrilOreBlock.java",
-          "src/main/java/net/mcreator/thehobbitmod/world/features/ores/MithrilOreFeature.java",
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/mithril_ore.json",
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_ore.json",
-          "src/main/resources/assets/the_hobbit_mod/blockstates/mithril_ore.json",
           "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/mithril_ore_biome_modifier.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MithrilOreBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mithril_ore.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/mithril_ore.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mithril_ore.json",
+          "src/main/java/net/mcreator/thehobbitmod/world/features/ores/MithrilOreFeature.java",
           "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/mithril_ore.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mithril_ore.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_ore.json"
         ]
       },
       "path": "~/Blocks"
@@ -376,11 +376,11 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_leggings.json",
           "src/main/java/net/mcreator/thehobbitmod/item/MithrilArmorItem.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_helmet.json",
           "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_chestplate.json",
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_boots.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_boots.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_leggings.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_helmet.json"
         ]
       },
       "path": "~/ToolsAndArmor"
@@ -515,8 +515,8 @@
       "registry_name": "misty_mountains",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/item/MistyMountainsItem.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/misty_mountains.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/misty_mountains.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/MistyMountainsItem.java"
         ]
       },
       "path": "~/Items"
@@ -530,9 +530,9 @@
       "registry_name": "elven_forest",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/elven_forest_tree.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json"
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json"
         ]
       },
       "path": "~/Biomes"
@@ -605,9 +605,9 @@
       "registry_name": "elven_village",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/thehobbitmod/world/features/ElvenVillageFeature.java",
           "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_village.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/elven_village.json",
-          "src/main/java/net/mcreator/thehobbitmod/world/features/ElvenVillageFeature.java",
           "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/elven_village_biome_modifier.json"
         ]
       },
@@ -678,8 +678,8 @@
       "registry_name": "nine_rings",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/item/NineRingsItem.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/nine_rings.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/nine_rings.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/NineRingsItem.java"
         ]
       },
       "path": "~/Items"
@@ -693,8 +693,8 @@
       "registry_name": "nazgul",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/entity/NazgulEntity.java",
           "src/main/resources/assets/the_hobbit_mod/models/item/nazgul_spawn_egg.json",
+          "src/main/java/net/mcreator/thehobbitmod/entity/NazgulEntity.java",
           "src/main/java/net/mcreator/thehobbitmod/client/renderer/NazgulRenderer.java"
         ]
       },
@@ -774,8 +774,8 @@
       "registry_name": "seven_rings",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/item/SevenRingsItem.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/seven_rings.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/seven_rings.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/SevenRingsItem.java"
         ]
       },
       "path": "~/Items"
@@ -954,8 +954,8 @@
       "registry_name": "hobbit_plains",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/hobbit_plains_tree.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/hobbit_plains_tree.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/hobbit_plains_tree.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/biome/hobbit_plains.json"
         ]
       },
@@ -1077,10 +1077,10 @@
       "subtitles.feast_of_starlight": "",
       "entity.the_hobbit_mod.nazgul": "Nazgul",
       "advancements.the_bane_of_men.title": "The Bane Of Men",
-      "advancements.elf_friend.descr": "Enter a Elvish Forest.",
       "biome.the_hobbit_mod.hobbit_plains": "Hobbit Plains",
-      "subtitles.smaug": "",
+      "advancements.elf_friend.descr": "Enter a Elvish Forest.",
       "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
+      "subtitles.smaug": "",
       "subtitles.dreaming_of_bag_end": "",
       "itemGroup.tabthe_hobbit_mod": "The Hobbit Mod",
       "item.the_hobbit_mod.glamdring": "Glamdring",
@@ -1183,7 +1183,7 @@
   "workspaceSettings": {
     "modid": "the_hobbit_mod",
     "modName": "The Hobbit Mod",
-    "version": "1.1.2",
+    "version": "1.2.1",
     "description": "Introduces The Hobbit into Minecraft.",
     "author": "gh5674",
     "websiteURL": "https://mcreator.net/modification/92049/hobbit-mod",
@@ -1195,10 +1195,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.19.4",
+    "currentGenerator": "forge-1.20.1",
     "credits": "gh5674",
     "modElementsPackage": "net.mcreator.thehobbitmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300224119
+  "mcreatorVersion": 202300335319
 }
