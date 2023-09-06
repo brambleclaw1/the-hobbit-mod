@@ -17,7 +17,7 @@ public class ThreeRingsItem extends Item {
 
 	@Override
 	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-		return 3F;
+		return 3f;
 	}
 
 	@Override
