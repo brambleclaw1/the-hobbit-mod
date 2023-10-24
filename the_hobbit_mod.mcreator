@@ -1005,6 +1005,30 @@
         ]
       },
       "path": "~/Advancements"
+    },
+    {
+      "name": "CustomSkySunrise",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_sky_sunrise",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/procedures/CustomSkySunriseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "pose",
+            "type": "pose"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -1077,10 +1101,10 @@
       "subtitles.feast_of_starlight": "",
       "entity.the_hobbit_mod.nazgul": "Nazgul",
       "advancements.the_bane_of_men.title": "The Bane Of Men",
-      "biome.the_hobbit_mod.hobbit_plains": "Hobbit Plains",
       "advancements.elf_friend.descr": "Enter a Elvish Forest.",
-      "subtitles.smaug": "",
+      "biome.the_hobbit_mod.hobbit_plains": "Hobbit Plains",
       "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
+      "subtitles.smaug": "",
       "subtitles.dreaming_of_bag_end": "",
       "itemGroup.tabthe_hobbit_mod": "The Hobbit Mod",
       "item.the_hobbit_mod.glamdring": "Glamdring",
@@ -1187,7 +1211,7 @@
     "description": "Introduces The Hobbit into Minecraft.",
     "author": "gh5674",
     "websiteURL": "https://mcreator.net/modification/92049/hobbit-mod",
-    "license": "Academic Free License v3.0",
+    "license": "Apache License version 2.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "the_ring",
