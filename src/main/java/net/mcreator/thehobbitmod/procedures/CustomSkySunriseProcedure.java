@@ -10,8 +10,11 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.Minecraft;
@@ -48,7 +51,7 @@ public class CustomSkySunriseProcedure {
 				RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 				RenderSystem.setShaderTexture(0, new ResourceLocation("minecraft", "textures/block/grass_block_side.png"));
 				poseStack.pushPose();
-				execute(null, clientLevel, poseStack);
+				execute(null, clientLevel, clientLevel.dimension(), poseStack);
 				poseStack.popPose();
 				RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 				RenderSystem.disableBlend();
@@ -60,12 +63,12 @@ public class CustomSkySunriseProcedure {
 		}
 	}
 
-	public static void execute(LevelAccessor world, PoseStack pose) {
-		execute(null, world, pose);
+	public static void execute(LevelAccessor world, ResourceKey<Level> dimension, PoseStack pose) {
+		execute(null, world, dimension, pose);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, PoseStack pose) {
-		if (pose == null)
+	private static void execute(@Nullable Event event, LevelAccessor world, ResourceKey<Level> dimension, PoseStack pose) {
+		if (dimension == null || pose == null)
 			return;
 		RenderSystem.enableBlend();
 		RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE);
@@ -77,7 +80,25 @@ public class CustomSkySunriseProcedure {
 			float _alpha = (_color >>> 24) / 255.0F;
 			RenderSystem.setShaderColor(_red, _green, _blue, _alpha);
 		}
-		RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit)mod" + ":textures/" + "sunrise" + ".png")));
+		if (dimension == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_hobbit_mod:middle_earth")))) {
+			if (world.getLevelData().isRaining()) {
+				RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit_mod" + ":textures/" + "storm" + ".png")));
+			} else {
+				if (world.dayTime() == 0) {
+					RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit_mod" + ":textures/" + "sunrise" + ".png")));
+				} else {
+					if (world.dayTime() == 6000) {
+						RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit_mod" + ":textures/" + "noon" + ".png")));
+					} else {
+						if (world.dayTime() == 12000) {
+							RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit_mod" + ":textures/" + "sunset" + ".png")));
+						} else {
+							RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit_mod" + ":textures/" + "night" + ".png")));
+						}
+					}
+				}
+			}
+		}
 		if (world instanceof ClientLevel _clientLevel) {
 			boolean _b0 = true;
 			if (_b0) {

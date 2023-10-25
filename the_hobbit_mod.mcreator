@@ -1019,6 +1019,10 @@
         ],
         "dependencies": [
           {
+            "name": "dimension",
+            "type": "dimensiontype"
+          },
+          {
             "name": "pose",
             "type": "pose"
           },
