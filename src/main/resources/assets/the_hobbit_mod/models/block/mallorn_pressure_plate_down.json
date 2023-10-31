@@ -1,0 +1,7 @@
+{
+  "parent": "block/pressure_plate_down",
+  "textures": {
+    "texture": "the_hobbit_mod:block/mallorn_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "the_hobbit_mod:mallorn_planks"
+    }
+  ],
+  "result": {
+    "item": "the_hobbit_mod:mallorn_button",
+    "count": 1
+  }
+}

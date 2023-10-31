@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "the_hobbit_mod:block/mallorn_planks",
+    "top": "the_hobbit_mod:block/mallorn_planks",
+    "side": "the_hobbit_mod:block/mallorn_planks"
+  },
+  "render_type": "solid"
+}

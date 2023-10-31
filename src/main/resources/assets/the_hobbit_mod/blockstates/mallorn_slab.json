@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "the_hobbit_mod:block/mallorn_slab"
+    },
+    "type=top": {
+      "model": "the_hobbit_mod:block/mallorn_slab_top"
+    },
+    "type=double": {
+      "model": "the_hobbit_mod:block/mallorn_slab_full"
+    }
+  }
+}

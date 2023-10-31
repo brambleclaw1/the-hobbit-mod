@@ -6,14 +6,19 @@ package net.mcreator.thehobbitmod.init;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.thehobbitmod.TheHobbitModMod;
 
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TheHobbitModModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TheHobbitModMod.MODID);
 	public static final RegistryObject<CreativeModeTab> THE_HOBBIT_MOD = REGISTRY.register("the_hobbit_mod",
@@ -43,7 +48,27 @@ public class TheHobbitModModTabs {
 				tabData.accept(TheHobbitModModItems.SEVEN_RINGS.get());
 				tabData.accept(TheHobbitModModItems.THREE_RINGS.get());
 				tabData.accept(TheHobbitModModItems.TARNISHED_RING.get());
+				tabData.accept(TheHobbitModModBlocks.MALLORN_WOOD.get().asItem());
+				tabData.accept(TheHobbitModModBlocks.MALLORN_LOG.get().asItem());
+				tabData.accept(TheHobbitModModBlocks.MALLORN_PLANKS.get().asItem());
+				tabData.accept(TheHobbitModModBlocks.MALLORN_STAIRS.get().asItem());
+				tabData.accept(TheHobbitModModBlocks.MALLORN_SLAB.get().asItem());
+				tabData.accept(TheHobbitModModBlocks.MALLORN_BUTTON.get().asItem());
 			})
 
 					.build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+
+		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
+			tabData.accept(TheHobbitModModBlocks.MALLORN_FENCE_GATE.get().asItem());
+			tabData.accept(TheHobbitModModBlocks.MALLORN_PRESSURE_PLATE.get().asItem());
+		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(TheHobbitModModBlocks.MALLORN_LEAVES.get().asItem());
+			tabData.accept(TheHobbitModModBlocks.MALLORN_FENCE.get().asItem());
+		}
+	}
 }

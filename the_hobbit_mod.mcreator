@@ -530,9 +530,9 @@
       "registry_name": "elven_forest",
       "metadata": {
         "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/elven_forest_tree.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json"
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json"
         ]
       },
       "path": "~/Biomes"
@@ -1033,6 +1033,328 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "MallornWood",
+      "type": "block",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_wood.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornWoodBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_wood.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_wood.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MallornLog",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_log.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornLogBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_log.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_log.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MallornPlanks",
+      "type": "block",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_planks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornPlanksBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_planks.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_planks.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_planks.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MallornLeaves",
+      "type": "block",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_leaves.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_leaves.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_leaves.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornLeavesBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MallornStairs",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_stairs.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_stairs.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_stairs_outer.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornStairsBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_stairs.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_stairs_inner.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MallornSlab",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_slab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornSlabBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_slab.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_slab.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_slab_top.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_slab_full.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_slab.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MallornFence",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_fence.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_fence.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_inventory.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_post.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornFenceBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MallornFenceGate",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_fence_gate.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_fence_gate.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_wall.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_wall_open.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_open.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornFenceGateBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MallornPressurePlate",
+      "type": "block",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_pressure_plate.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_pressure_plate.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_pressure_plate_down.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_pressure_plate.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornPressurePlateBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MallornButton",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornButtonBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_button_inventory.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_button.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_button.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_button_pressed.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_button.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MallornItemsTag",
+      "type": "tag",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_items_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/mallorn_log.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "MallornWoodRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mallorn_wood_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MallornPlanksRecipe",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_planks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mallorn_planks_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MallornStairsRecipe",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mallorn_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MallornSlabRecipe",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mallorn_slab_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MallornFenceRecipe",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mallorn_fence_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MallornFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mallorn_fence_gate_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MallornPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mallorn_pressure_plate_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MallornButtonRecipe",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mallorn_button_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MallornStickRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mallorn_stick_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -1105,20 +1427,25 @@
       "subtitles.feast_of_starlight": "",
       "entity.the_hobbit_mod.nazgul": "Nazgul",
       "advancements.the_bane_of_men.title": "The Bane Of Men",
-      "advancements.elf_friend.descr": "Enter a Elvish Forest.",
       "biome.the_hobbit_mod.hobbit_plains": "Hobbit Plains",
-      "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
+      "advancements.elf_friend.descr": "Enter a Elvish Forest.",
+      "block.the_hobbit_mod.mallorn_pressure_plate": "Mallorn Pressure Plate",
       "subtitles.smaug": "",
+      "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
+      "block.the_hobbit_mod.mallorn_fence": "Mallorn Fence",
       "subtitles.dreaming_of_bag_end": "",
       "itemGroup.tabthe_hobbit_mod": "The Hobbit Mod",
       "item.the_hobbit_mod.glamdring": "Glamdring",
       "item.the_hobbit_mod.mithril_armor_chestplate": "Mithril Chestplate",
+      "block.the_hobbit_mod.mallorn_fence_gate": "Mallorn Fence Gate",
       "entity.the_hobbit_mod.orc": "Orc",
       "advancements.its_worth_is_greater.title": "It\u0027s worth is greater then the whole Shire...",
       "item.the_hobbit_mod.pipe": "Pipe",
       "subtitles.get_ring": "",
+      "block.the_hobbit_mod.mallorn_log": "Mallorn Log",
       "subtitles.lothlorien": "",
       "item.the_hobbit_mod.the_one_ring": "The One Ring",
+      "block.the_hobbit_mod.mallorn_wood": "Mallorn Wood",
       "item.the_hobbit_mod.nazgul_spawn_egg": "Nazgul Spawn Egg",
       "advancements.mithril.descr": "Mine your first mithril.",
       "item.the_hobbit_mod.heated_mithril": "Heated Mithril",
@@ -1129,6 +1456,7 @@
       "item.the_hobbit_mod.mithril_armor_helmet": "Mithril Helmet",
       "advancements.the_hobbit_mod_install.descr": "Enter Middle Earth",
       "block.the_hobbit_mod.mithril_ore": "Mithril Ore",
+      "block.the_hobbit_mod.mallorn_slab": "Mallorn Slab",
       "block.the_hobbit_mod.burning_magma": "Burning Magma",
       "item.the_hobbit_mod.mithril_armor_leggings": "Mithril Leggings",
       "item.the_hobbit_mod.tarnished_ring": "Tarnished Ring",
@@ -1137,6 +1465,7 @@
       "advancements.one_does_not_simply.title": "One does not simply...",
       "item.the_hobbit_mod.mithril_axe": "Mithril Axe",
       "subtitles.the_adventure_begins": "",
+      "block.the_hobbit_mod.mallorn_leaves": "Mallorn Leaves",
       "item.the_hobbit_mod.raw_mithril": "Raw Mithril",
       "subtitles.hobbit_ambient": "",
       "subtitles.mistymountains": "",
@@ -1157,10 +1486,13 @@
       "subtitles.nazgul": "",
       "item_group.the_hobbit_mod.the_hobbit_mod": "The Hobbit Mod",
       "advancements.its_worth_is_greater.descr": "Make a Mithril Chestplate.",
+      "block.the_hobbit_mod.mallorn_stairs": "Mallorn Stairs",
       "biome.the_hobbit_mod.dragon_burned_field": "Dragon Burned Field",
       "advancements.the_hobbit_mod_install.title": "The Hobbit Mod",
       "advancements.my_precious.title": "My Precious!",
-      "item.the_hobbit_mod.misty_mountains": "Misty Mountains"
+      "block.the_hobbit_mod.mallorn_planks": "Mallorn Planks",
+      "item.the_hobbit_mod.misty_mountains": "Misty Mountains",
+      "block.the_hobbit_mod.mallorn_button": "Mallorn Button"
     }
   },
   "foldersRoot": {
@@ -1204,6 +1536,10 @@
       },
       {
         "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Tags",
         "children": []
       }
     ]

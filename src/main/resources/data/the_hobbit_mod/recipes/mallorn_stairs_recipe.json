@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_stairs",
+  "category": "building",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "the_hobbit_mod:mallorn_planks"
+    },
+    "3": {
+      "item": "the_hobbit_mod:mallorn_planks"
+    },
+    "4": {
+      "item": "the_hobbit_mod:mallorn_planks"
+    },
+    "6": {
+      "item": "the_hobbit_mod:mallorn_planks"
+    },
+    "7": {
+      "item": "the_hobbit_mod:mallorn_planks"
+    },
+    "8": {
+      "item": "the_hobbit_mod:mallorn_planks"
+    }
+  },
+  "result": {
+    "item": "the_hobbit_mod:mallorn_stairs",
+    "count": 4
+  }
+}

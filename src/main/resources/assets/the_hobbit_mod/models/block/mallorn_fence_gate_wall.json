@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_fence_gate_wall",
+  "textures": {
+    "texture": "the_hobbit_mod:block/mallorn_planks"
+  },
+  "render_type": "solid"
+}

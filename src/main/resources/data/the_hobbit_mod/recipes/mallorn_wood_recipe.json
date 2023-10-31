@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "category": "building",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "the_hobbit_mod:mallorn_log"
+    },
+    "1": {
+      "item": "the_hobbit_mod:mallorn_log"
+    },
+    "2": {
+      "item": "the_hobbit_mod:mallorn_log"
+    },
+    "3": {
+      "item": "the_hobbit_mod:mallorn_log"
+    }
+  },
+  "result": {
+    "item": "the_hobbit_mod:mallorn_wood",
+    "count": 3
+  }
+}

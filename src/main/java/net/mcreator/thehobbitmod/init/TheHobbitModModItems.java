@@ -60,6 +60,16 @@ public class TheHobbitModModItems {
 	public static final RegistryObject<Item> SEVEN_RINGS = REGISTRY.register("seven_rings", () -> new SevenRingsItem());
 	public static final RegistryObject<Item> THREE_RINGS = REGISTRY.register("three_rings", () -> new ThreeRingsItem());
 	public static final RegistryObject<Item> TARNISHED_RING = REGISTRY.register("tarnished_ring", () -> new TarnishedRingItem());
+	public static final RegistryObject<Item> MALLORN_WOOD = block(TheHobbitModModBlocks.MALLORN_WOOD);
+	public static final RegistryObject<Item> MALLORN_LOG = block(TheHobbitModModBlocks.MALLORN_LOG);
+	public static final RegistryObject<Item> MALLORN_PLANKS = block(TheHobbitModModBlocks.MALLORN_PLANKS);
+	public static final RegistryObject<Item> MALLORN_LEAVES = block(TheHobbitModModBlocks.MALLORN_LEAVES);
+	public static final RegistryObject<Item> MALLORN_STAIRS = block(TheHobbitModModBlocks.MALLORN_STAIRS);
+	public static final RegistryObject<Item> MALLORN_SLAB = block(TheHobbitModModBlocks.MALLORN_SLAB);
+	public static final RegistryObject<Item> MALLORN_FENCE = block(TheHobbitModModBlocks.MALLORN_FENCE);
+	public static final RegistryObject<Item> MALLORN_FENCE_GATE = block(TheHobbitModModBlocks.MALLORN_FENCE_GATE);
+	public static final RegistryObject<Item> MALLORN_PRESSURE_PLATE = block(TheHobbitModModBlocks.MALLORN_PRESSURE_PLATE);
+	public static final RegistryObject<Item> MALLORN_BUTTON = block(TheHobbitModModBlocks.MALLORN_BUTTON);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

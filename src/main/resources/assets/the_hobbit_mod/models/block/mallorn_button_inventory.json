@@ -1,0 +1,7 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "the_hobbit_mod:block/mallorn_planks"
+  },
+  "render_type": "solid"
+}

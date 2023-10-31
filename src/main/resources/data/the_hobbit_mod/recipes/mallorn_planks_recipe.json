@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "forge:mallorn_log"
+    }
+  ],
+  "result": {
+    "item": "the_hobbit_mod:mallorn_planks",
+    "count": 4
+  }
+}
