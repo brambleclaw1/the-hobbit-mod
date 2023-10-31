@@ -83,82 +83,330 @@ public class CustomSkySunriseProcedure {
 		if (dimension == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_hobbit_mod:middle_earth")))) {
 			if (world.getLevelData().isRaining()) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit_mod" + ":textures/" + "storm" + ".png")));
+				if (world instanceof ClientLevel _clientLevel) {
+					boolean _b0 = true;
+					if (_b0) {
+						RenderSystem.setShader(GameRenderer::getPositionTexColorShader);
+						BufferBuilder _bufferBuilder = Tesselator.getInstance().getBuilder();
+						_bufferBuilder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX_COLOR);
+						pose.popPose();
+						pose.pushPose();
+						float _u0 = 0.0F;
+						float _v0 = 0.0F;
+						float _u1 = 1.0F;
+						float _v1 = 1.0F;
+						for (int _i = 0; _i < 6; ++_i) {
+							if (_i == 0) {
+								pose.mulPose(Axis.YP.rotationDegrees(180.0F));
+								_u0 = 0.0F;
+								_v0 = 0.0F;
+								_u1 = 1.0F / 3.0F;
+								_v1 = 0.5F;
+							} else if (_i == 1) {
+								pose.mulPose(Axis.XP.rotationDegrees(180.0F));
+								_u0 = 1.0F / 3.0F;
+								_v0 = 0.0F;
+								_u1 = 2.0F / 3.0F;
+								_v1 = 0.5F;
+							} else if (_i == 2) {
+								pose.mulPose(Axis.YP.rotationDegrees(-180.0F));
+								pose.mulPose(Axis.XP.rotationDegrees(-90.0F));
+								_u0 = 2.0F / 3.0F;
+								_v0 = 0.0F;
+								_u1 = 1.0F;
+								_v1 = 0.5F;
+							} else if (_i == 3) {
+								pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+								_u0 = 0.0F;
+								_v0 = 0.5F;
+								_u1 = 1.0F / 3.0F;
+								_v1 = 1.0F;
+							} else if (_i == 4) {
+								pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+								_u0 = 1.0F / 3.0F;
+								_v0 = 0.5F;
+								_u1 = 2.0F / 3.0F;
+								_v1 = 1.0F;
+							} else if (_i == 5) {
+								pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+								_u0 = 2.0F / 3.0F;
+								_v0 = 0.5F;
+								_u1 = 1.0F;
+								_v1 = 1.0F;
+							}
+							Matrix4f _matrix4f = pose.last().pose();
+							_bufferBuilder.vertex(_matrix4f, -100.0F, -100.0F, -100.0F).uv(_u0, _v0).color(255, 255, 255, 255).endVertex();
+							_bufferBuilder.vertex(_matrix4f, -100.0F, -100.0F, 100.0F).uv(_u0, _v1).color(255, 255, 255, 255).endVertex();
+							_bufferBuilder.vertex(_matrix4f, 100.0F, -100.0F, 100.0F).uv(_u1, _v1).color(255, 255, 255, 255).endVertex();
+							_bufferBuilder.vertex(_matrix4f, 100.0F, -100.0F, -100.0F).uv(_u1, _v0).color(255, 255, 255, 255).endVertex();
+						}
+						BufferUploader.drawWithShader(_bufferBuilder.end());
+						pose.popPose();
+						pose.pushPose();
+					}
+				}
 			} else {
 				if (world.dayTime() == 0) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit_mod" + ":textures/" + "sunrise" + ".png")));
+					if (world instanceof ClientLevel _clientLevel) {
+						boolean _b0 = true;
+						if (_b0) {
+							RenderSystem.setShader(GameRenderer::getPositionTexColorShader);
+							BufferBuilder _bufferBuilder = Tesselator.getInstance().getBuilder();
+							_bufferBuilder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX_COLOR);
+							pose.popPose();
+							pose.pushPose();
+							float _u0 = 0.0F;
+							float _v0 = 0.0F;
+							float _u1 = 1.0F;
+							float _v1 = 1.0F;
+							for (int _i = 0; _i < 6; ++_i) {
+								if (_i == 0) {
+									pose.mulPose(Axis.YP.rotationDegrees(180.0F));
+									_u0 = 0.0F;
+									_v0 = 0.0F;
+									_u1 = 1.0F / 3.0F;
+									_v1 = 0.5F;
+								} else if (_i == 1) {
+									pose.mulPose(Axis.XP.rotationDegrees(180.0F));
+									_u0 = 1.0F / 3.0F;
+									_v0 = 0.0F;
+									_u1 = 2.0F / 3.0F;
+									_v1 = 0.5F;
+								} else if (_i == 2) {
+									pose.mulPose(Axis.YP.rotationDegrees(-180.0F));
+									pose.mulPose(Axis.XP.rotationDegrees(-90.0F));
+									_u0 = 2.0F / 3.0F;
+									_v0 = 0.0F;
+									_u1 = 1.0F;
+									_v1 = 0.5F;
+								} else if (_i == 3) {
+									pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+									_u0 = 0.0F;
+									_v0 = 0.5F;
+									_u1 = 1.0F / 3.0F;
+									_v1 = 1.0F;
+								} else if (_i == 4) {
+									pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+									_u0 = 1.0F / 3.0F;
+									_v0 = 0.5F;
+									_u1 = 2.0F / 3.0F;
+									_v1 = 1.0F;
+								} else if (_i == 5) {
+									pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+									_u0 = 2.0F / 3.0F;
+									_v0 = 0.5F;
+									_u1 = 1.0F;
+									_v1 = 1.0F;
+								}
+								Matrix4f _matrix4f = pose.last().pose();
+								_bufferBuilder.vertex(_matrix4f, -100.0F, -100.0F, -100.0F).uv(_u0, _v0).color(255, 255, 255, 255).endVertex();
+								_bufferBuilder.vertex(_matrix4f, -100.0F, -100.0F, 100.0F).uv(_u0, _v1).color(255, 255, 255, 255).endVertex();
+								_bufferBuilder.vertex(_matrix4f, 100.0F, -100.0F, 100.0F).uv(_u1, _v1).color(255, 255, 255, 255).endVertex();
+								_bufferBuilder.vertex(_matrix4f, 100.0F, -100.0F, -100.0F).uv(_u1, _v0).color(255, 255, 255, 255).endVertex();
+							}
+							BufferUploader.drawWithShader(_bufferBuilder.end());
+							pose.popPose();
+							pose.pushPose();
+						}
+					}
 				} else {
 					if (world.dayTime() == 6000) {
 						RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit_mod" + ":textures/" + "noon" + ".png")));
+						if (world instanceof ClientLevel _clientLevel) {
+							boolean _b0 = true;
+							if (_b0) {
+								RenderSystem.setShader(GameRenderer::getPositionTexColorShader);
+								BufferBuilder _bufferBuilder = Tesselator.getInstance().getBuilder();
+								_bufferBuilder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX_COLOR);
+								pose.popPose();
+								pose.pushPose();
+								float _u0 = 0.0F;
+								float _v0 = 0.0F;
+								float _u1 = 1.0F;
+								float _v1 = 1.0F;
+								for (int _i = 0; _i < 6; ++_i) {
+									if (_i == 0) {
+										pose.mulPose(Axis.YP.rotationDegrees(180.0F));
+										_u0 = 0.0F;
+										_v0 = 0.0F;
+										_u1 = 1.0F / 3.0F;
+										_v1 = 0.5F;
+									} else if (_i == 1) {
+										pose.mulPose(Axis.XP.rotationDegrees(180.0F));
+										_u0 = 1.0F / 3.0F;
+										_v0 = 0.0F;
+										_u1 = 2.0F / 3.0F;
+										_v1 = 0.5F;
+									} else if (_i == 2) {
+										pose.mulPose(Axis.YP.rotationDegrees(-180.0F));
+										pose.mulPose(Axis.XP.rotationDegrees(-90.0F));
+										_u0 = 2.0F / 3.0F;
+										_v0 = 0.0F;
+										_u1 = 1.0F;
+										_v1 = 0.5F;
+									} else if (_i == 3) {
+										pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+										_u0 = 0.0F;
+										_v0 = 0.5F;
+										_u1 = 1.0F / 3.0F;
+										_v1 = 1.0F;
+									} else if (_i == 4) {
+										pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+										_u0 = 1.0F / 3.0F;
+										_v0 = 0.5F;
+										_u1 = 2.0F / 3.0F;
+										_v1 = 1.0F;
+									} else if (_i == 5) {
+										pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+										_u0 = 2.0F / 3.0F;
+										_v0 = 0.5F;
+										_u1 = 1.0F;
+										_v1 = 1.0F;
+									}
+									Matrix4f _matrix4f = pose.last().pose();
+									_bufferBuilder.vertex(_matrix4f, -100.0F, -100.0F, -100.0F).uv(_u0, _v0).color(255, 255, 255, 255).endVertex();
+									_bufferBuilder.vertex(_matrix4f, -100.0F, -100.0F, 100.0F).uv(_u0, _v1).color(255, 255, 255, 255).endVertex();
+									_bufferBuilder.vertex(_matrix4f, 100.0F, -100.0F, 100.0F).uv(_u1, _v1).color(255, 255, 255, 255).endVertex();
+									_bufferBuilder.vertex(_matrix4f, 100.0F, -100.0F, -100.0F).uv(_u1, _v0).color(255, 255, 255, 255).endVertex();
+								}
+								BufferUploader.drawWithShader(_bufferBuilder.end());
+								pose.popPose();
+								pose.pushPose();
+							}
+						}
 					} else {
 						if (world.dayTime() == 12000) {
 							RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit_mod" + ":textures/" + "sunset" + ".png")));
+							if (world instanceof ClientLevel _clientLevel) {
+								boolean _b0 = true;
+								if (_b0) {
+									RenderSystem.setShader(GameRenderer::getPositionTexColorShader);
+									BufferBuilder _bufferBuilder = Tesselator.getInstance().getBuilder();
+									_bufferBuilder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX_COLOR);
+									pose.popPose();
+									pose.pushPose();
+									float _u0 = 0.0F;
+									float _v0 = 0.0F;
+									float _u1 = 1.0F;
+									float _v1 = 1.0F;
+									for (int _i = 0; _i < 6; ++_i) {
+										if (_i == 0) {
+											pose.mulPose(Axis.YP.rotationDegrees(180.0F));
+											_u0 = 0.0F;
+											_v0 = 0.0F;
+											_u1 = 1.0F / 3.0F;
+											_v1 = 0.5F;
+										} else if (_i == 1) {
+											pose.mulPose(Axis.XP.rotationDegrees(180.0F));
+											_u0 = 1.0F / 3.0F;
+											_v0 = 0.0F;
+											_u1 = 2.0F / 3.0F;
+											_v1 = 0.5F;
+										} else if (_i == 2) {
+											pose.mulPose(Axis.YP.rotationDegrees(-180.0F));
+											pose.mulPose(Axis.XP.rotationDegrees(-90.0F));
+											_u0 = 2.0F / 3.0F;
+											_v0 = 0.0F;
+											_u1 = 1.0F;
+											_v1 = 0.5F;
+										} else if (_i == 3) {
+											pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+											_u0 = 0.0F;
+											_v0 = 0.5F;
+											_u1 = 1.0F / 3.0F;
+											_v1 = 1.0F;
+										} else if (_i == 4) {
+											pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+											_u0 = 1.0F / 3.0F;
+											_v0 = 0.5F;
+											_u1 = 2.0F / 3.0F;
+											_v1 = 1.0F;
+										} else if (_i == 5) {
+											pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+											_u0 = 2.0F / 3.0F;
+											_v0 = 0.5F;
+											_u1 = 1.0F;
+											_v1 = 1.0F;
+										}
+										Matrix4f _matrix4f = pose.last().pose();
+										_bufferBuilder.vertex(_matrix4f, -100.0F, -100.0F, -100.0F).uv(_u0, _v0).color(255, 255, 255, 255).endVertex();
+										_bufferBuilder.vertex(_matrix4f, -100.0F, -100.0F, 100.0F).uv(_u0, _v1).color(255, 255, 255, 255).endVertex();
+										_bufferBuilder.vertex(_matrix4f, 100.0F, -100.0F, 100.0F).uv(_u1, _v1).color(255, 255, 255, 255).endVertex();
+										_bufferBuilder.vertex(_matrix4f, 100.0F, -100.0F, -100.0F).uv(_u1, _v0).color(255, 255, 255, 255).endVertex();
+									}
+									BufferUploader.drawWithShader(_bufferBuilder.end());
+									pose.popPose();
+									pose.pushPose();
+								}
+							}
 						} else {
 							RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit_mod" + ":textures/" + "night" + ".png")));
+							if (world instanceof ClientLevel _clientLevel) {
+								boolean _b0 = true;
+								if (_b0) {
+									RenderSystem.setShader(GameRenderer::getPositionTexColorShader);
+									BufferBuilder _bufferBuilder = Tesselator.getInstance().getBuilder();
+									_bufferBuilder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX_COLOR);
+									pose.popPose();
+									pose.pushPose();
+									float _u0 = 0.0F;
+									float _v0 = 0.0F;
+									float _u1 = 1.0F;
+									float _v1 = 1.0F;
+									for (int _i = 0; _i < 6; ++_i) {
+										if (_i == 0) {
+											pose.mulPose(Axis.YP.rotationDegrees(180.0F));
+											_u0 = 0.0F;
+											_v0 = 0.0F;
+											_u1 = 1.0F / 3.0F;
+											_v1 = 0.5F;
+										} else if (_i == 1) {
+											pose.mulPose(Axis.XP.rotationDegrees(180.0F));
+											_u0 = 1.0F / 3.0F;
+											_v0 = 0.0F;
+											_u1 = 2.0F / 3.0F;
+											_v1 = 0.5F;
+										} else if (_i == 2) {
+											pose.mulPose(Axis.YP.rotationDegrees(-180.0F));
+											pose.mulPose(Axis.XP.rotationDegrees(-90.0F));
+											_u0 = 2.0F / 3.0F;
+											_v0 = 0.0F;
+											_u1 = 1.0F;
+											_v1 = 0.5F;
+										} else if (_i == 3) {
+											pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+											_u0 = 0.0F;
+											_v0 = 0.5F;
+											_u1 = 1.0F / 3.0F;
+											_v1 = 1.0F;
+										} else if (_i == 4) {
+											pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+											_u0 = 1.0F / 3.0F;
+											_v0 = 0.5F;
+											_u1 = 2.0F / 3.0F;
+											_v1 = 1.0F;
+										} else if (_i == 5) {
+											pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
+											_u0 = 2.0F / 3.0F;
+											_v0 = 0.5F;
+											_u1 = 1.0F;
+											_v1 = 1.0F;
+										}
+										Matrix4f _matrix4f = pose.last().pose();
+										_bufferBuilder.vertex(_matrix4f, -100.0F, -100.0F, -100.0F).uv(_u0, _v0).color(255, 255, 255, 255).endVertex();
+										_bufferBuilder.vertex(_matrix4f, -100.0F, -100.0F, 100.0F).uv(_u0, _v1).color(255, 255, 255, 255).endVertex();
+										_bufferBuilder.vertex(_matrix4f, 100.0F, -100.0F, 100.0F).uv(_u1, _v1).color(255, 255, 255, 255).endVertex();
+										_bufferBuilder.vertex(_matrix4f, 100.0F, -100.0F, -100.0F).uv(_u1, _v0).color(255, 255, 255, 255).endVertex();
+									}
+									BufferUploader.drawWithShader(_bufferBuilder.end());
+									pose.popPose();
+									pose.pushPose();
+								}
+							}
 						}
 					}
 				}
-			}
-		}
-		if (world instanceof ClientLevel _clientLevel) {
-			boolean _b0 = true;
-			if (_b0) {
-				RenderSystem.setShader(GameRenderer::getPositionTexColorShader);
-				BufferBuilder _bufferBuilder = Tesselator.getInstance().getBuilder();
-				_bufferBuilder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX_COLOR);
-				pose.popPose();
-				pose.pushPose();
-				float _u0 = 0.0F;
-				float _v0 = 0.0F;
-				float _u1 = 1.0F;
-				float _v1 = 1.0F;
-				for (int _i = 0; _i < 6; ++_i) {
-					if (_i == 0) {
-						pose.mulPose(Axis.YP.rotationDegrees(180.0F));
-						_u0 = 0.0F;
-						_v0 = 0.0F;
-						_u1 = 1.0F / 3.0F;
-						_v1 = 0.5F;
-					} else if (_i == 1) {
-						pose.mulPose(Axis.XP.rotationDegrees(180.0F));
-						_u0 = 1.0F / 3.0F;
-						_v0 = 0.0F;
-						_u1 = 2.0F / 3.0F;
-						_v1 = 0.5F;
-					} else if (_i == 2) {
-						pose.mulPose(Axis.YP.rotationDegrees(-180.0F));
-						pose.mulPose(Axis.XP.rotationDegrees(-90.0F));
-						_u0 = 2.0F / 3.0F;
-						_v0 = 0.0F;
-						_u1 = 1.0F;
-						_v1 = 0.5F;
-					} else if (_i == 3) {
-						pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
-						_u0 = 0.0F;
-						_v0 = 0.5F;
-						_u1 = 1.0F / 3.0F;
-						_v1 = 1.0F;
-					} else if (_i == 4) {
-						pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
-						_u0 = 1.0F / 3.0F;
-						_v0 = 0.5F;
-						_u1 = 2.0F / 3.0F;
-						_v1 = 1.0F;
-					} else if (_i == 5) {
-						pose.mulPose(Axis.ZP.rotationDegrees(90.0F));
-						_u0 = 2.0F / 3.0F;
-						_v0 = 0.5F;
-						_u1 = 1.0F;
-						_v1 = 1.0F;
-					}
-					Matrix4f _matrix4f = pose.last().pose();
-					_bufferBuilder.vertex(_matrix4f, -100.0F, -100.0F, -100.0F).uv(_u0, _v0).color(255, 255, 255, 255).endVertex();
-					_bufferBuilder.vertex(_matrix4f, -100.0F, -100.0F, 100.0F).uv(_u0, _v1).color(255, 255, 255, 255).endVertex();
-					_bufferBuilder.vertex(_matrix4f, 100.0F, -100.0F, 100.0F).uv(_u1, _v1).color(255, 255, 255, 255).endVertex();
-					_bufferBuilder.vertex(_matrix4f, 100.0F, -100.0F, -100.0F).uv(_u1, _v0).color(255, 255, 255, 255).endVertex();
-				}
-				BufferUploader.drawWithShader(_bufferBuilder.end());
-				pose.popPose();
-				pose.pushPose();
 			}
 		}
 	}
