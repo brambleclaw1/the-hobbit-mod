@@ -530,9 +530,9 @@
       "registry_name": "elven_forest",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/elven_forest_tree.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json"
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json"
         ]
       },
       "path": "~/Biomes"
@@ -954,8 +954,8 @@
       "registry_name": "hobbit_plains",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/hobbit_plains_tree.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/hobbit_plains_tree.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/hobbit_plains_tree.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/biome/hobbit_plains.json"
         ]
       },
@@ -1105,10 +1105,10 @@
       "subtitles.feast_of_starlight": "",
       "entity.the_hobbit_mod.nazgul": "Nazgul",
       "advancements.the_bane_of_men.title": "The Bane Of Men",
-      "biome.the_hobbit_mod.hobbit_plains": "Hobbit Plains",
       "advancements.elf_friend.descr": "Enter a Elvish Forest.",
-      "subtitles.smaug": "",
+      "biome.the_hobbit_mod.hobbit_plains": "Hobbit Plains",
       "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
+      "subtitles.smaug": "",
       "subtitles.dreaming_of_bag_end": "",
       "itemGroup.tabthe_hobbit_mod": "The Hobbit Mod",
       "item.the_hobbit_mod.glamdring": "Glamdring",
@@ -1148,7 +1148,7 @@
       "item.the_hobbit_mod.seven_rings": "The Seven Rings",
       "advancements.the_quiet_folk.descr": "Enter a Hobbit Plains biome.",
       "advancements.elf_friend.title": "Elf-Friend",
-      "item.the_hobbit_mod.three_rings": "Three Rings",
+      "item.the_hobbit_mod.three_rings": "The Three Rings",
       "advancements.mithril.title": "Mithril!",
       "item.the_hobbit_mod.sting": "Sting",
       "item.the_hobbit_mod.mithril_pickaxe": "Mithril Pickaxe",

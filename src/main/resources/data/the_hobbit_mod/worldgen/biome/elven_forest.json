@@ -15,10 +15,10 @@
       },
       "probability": 0.005
     },
-    "foliage_color": -39424,
+    "foliage_color": -26368,
     "grass_color": -26368,
-    "sky_color": -13312,
-    "fog_color": -13312,
+    "sky_color": -16776961,
+    "fog_color": -16776961,
     "water_color": -16777114,
     "water_fog_color": -16777114
   },
