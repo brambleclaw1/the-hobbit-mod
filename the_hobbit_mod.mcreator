@@ -136,64 +136,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "MithrilPickaxe",
-      "type": "tool",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mithril_pickaxe",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_pickaxe.json",
-          "src/main/java/net/mcreator/thehobbitmod/item/MithrilPickaxeItem.java"
-        ]
-      },
-      "path": "~/ToolsAndArmor"
-    },
-    {
-      "name": "MithrilPickaxeRecipe",
-      "type": "recipe",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mithril_pickaxe_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_hobbit_mod/recipes/mithril_pickaxe_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "MithrilSword",
-      "type": "tool",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mithril_sword",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_sword.json",
-          "src/main/java/net/mcreator/thehobbitmod/item/MithrilSwordItem.java"
-        ]
-      },
-      "path": "~/ToolsAndArmor"
-    },
-    {
-      "name": "MithrilSwordRecipe",
-      "type": "recipe",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mithril_sword_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_hobbit_mod/recipes/mithril_sword_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
       "name": "HobbitHole",
       "type": "structure",
       "sortid": 11,
@@ -314,21 +256,6 @@
       "path": "~/Blocks"
     },
     {
-      "name": "MithrilAxe",
-      "type": "tool",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mithril_axe",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_axe.json",
-          "src/main/java/net/mcreator/thehobbitmod/item/MithrilAxeItem.java"
-        ]
-      },
-      "path": "~/ToolsAndArmor"
-    },
-    {
       "name": "PipeRightclicked",
       "type": "procedure",
       "sortid": 19,
@@ -404,20 +331,6 @@
         ]
       },
       "path": "~/Procedures"
-    },
-    {
-      "name": "MithrilAxeRecipe",
-      "type": "recipe",
-      "sortid": 22,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mithril_axe_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_hobbit_mod/recipes/mithril_axe_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
     },
     {
       "name": "MithrilHelmetRecipe",
@@ -1355,6 +1268,151 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Mithril_ToolsPickaxe",
+      "type": "tool",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_tools_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_pickaxe.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsPickaxeItem.java"
+        ]
+      },
+      "path": "~/ToolsAndArmor"
+    },
+    {
+      "name": "Mithril_ToolsAxe",
+      "type": "tool",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_tools_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_axe.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsAxeItem.java"
+        ]
+      },
+      "path": "~/ToolsAndArmor"
+    },
+    {
+      "name": "Mithril_ToolsSword",
+      "type": "tool",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_tools_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_sword.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsSwordItem.java"
+        ]
+      },
+      "path": "~/ToolsAndArmor"
+    },
+    {
+      "name": "Mithril_ToolsShovel",
+      "type": "tool",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_tools_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsShovelItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_shovel.json"
+        ]
+      },
+      "path": "~/ToolsAndArmor"
+    },
+    {
+      "name": "Mithril_ToolsHoe",
+      "type": "tool",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_tools_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_hoe.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsHoeItem.java"
+        ]
+      },
+      "path": "~/ToolsAndArmor"
+    },
+    {
+      "name": "Mithril_ToolsPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_tools_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mithril_tools_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Mithril_ToolsAxeRecipe",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_tools_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mithril_tools_axe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Mithril_ToolsSwordRecipe",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_tools_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mithril_tools_sword_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Mithril_ToolsShovelRecipe",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_tools_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mithril_tools_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Mithril_ToolsHoeRecipe",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_tools_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/mithril_tools_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -1423,7 +1481,6 @@
       "biome.the_hobbit_mod.elven_forest": "Elven Forest",
       "subtitles.nazgul_dead": "",
       "subtitles.dreaming_of_bag_endd": "",
-      "item.the_hobbit_mod.mithril_sword": "Mithril Sword",
       "subtitles.feast_of_starlight": "",
       "entity.the_hobbit_mod.nazgul": "Nazgul",
       "advancements.the_bane_of_men.title": "The Bane Of Men",
@@ -1438,6 +1495,7 @@
       "item.the_hobbit_mod.glamdring": "Glamdring",
       "item.the_hobbit_mod.mithril_armor_chestplate": "Mithril Chestplate",
       "block.the_hobbit_mod.mallorn_fence_gate": "Mallorn Fence Gate",
+      "item.the_hobbit_mod.mithril_tools_sword": "Mithril Sword",
       "entity.the_hobbit_mod.orc": "Orc",
       "advancements.its_worth_is_greater.title": "It\u0027s worth is greater then the whole Shire...",
       "item.the_hobbit_mod.pipe": "Pipe",
@@ -1458,14 +1516,15 @@
       "block.the_hobbit_mod.mithril_ore": "Mithril Ore",
       "block.the_hobbit_mod.mallorn_slab": "Mallorn Slab",
       "block.the_hobbit_mod.burning_magma": "Burning Magma",
+      "item.the_hobbit_mod.mithril_tools_hoe": "Mithril Hoe",
       "item.the_hobbit_mod.mithril_armor_leggings": "Mithril Leggings",
       "item.the_hobbit_mod.tarnished_ring": "Tarnished Ring",
       "item.the_hobbit_mod.misty_mountains.desc": "Misty Mountains",
       "subtitles.moon_runes": "",
       "advancements.one_does_not_simply.title": "One does not simply...",
-      "item.the_hobbit_mod.mithril_axe": "Mithril Axe",
       "subtitles.the_adventure_begins": "",
       "block.the_hobbit_mod.mallorn_leaves": "Mallorn Leaves",
+      "item.the_hobbit_mod.mithril_tools_pickaxe": "Mithril Pickaxe",
       "item.the_hobbit_mod.raw_mithril": "Raw Mithril",
       "subtitles.hobbit_ambient": "",
       "subtitles.mistymountains": "",
@@ -1480,11 +1539,12 @@
       "item.the_hobbit_mod.three_rings": "The Three Rings",
       "advancements.mithril.title": "Mithril!",
       "item.the_hobbit_mod.sting": "Sting",
-      "item.the_hobbit_mod.mithril_pickaxe": "Mithril Pickaxe",
       "subtitles.misty_mountains": "",
       "advancements.the_bane_of_men.descr": "Hold the Nine Ring for the first time.",
+      "item.the_hobbit_mod.mithril_tools_axe": "Mithril Axe",
       "subtitles.nazgul": "",
       "item_group.the_hobbit_mod.the_hobbit_mod": "The Hobbit Mod",
+      "item.the_hobbit_mod.mithril_tools_shovel": "Mithril Shovel",
       "advancements.its_worth_is_greater.descr": "Make a Mithril Chestplate.",
       "block.the_hobbit_mod.mallorn_stairs": "Mallorn Stairs",
       "biome.the_hobbit_mod.dragon_burned_field": "Dragon Burned Field",

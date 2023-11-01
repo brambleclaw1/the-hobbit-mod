@@ -29,13 +29,10 @@ public class TheHobbitModModTabs {
 				tabData.accept(TheHobbitModModItems.RAW_MITHRIL.get());
 				tabData.accept(TheHobbitModModItems.BURNING_MAGMA_SHARD.get());
 				tabData.accept(TheHobbitModModBlocks.BURNING_MAGMA.get().asItem());
-				tabData.accept(TheHobbitModModItems.MITHRIL_PICKAXE.get());
-				tabData.accept(TheHobbitModModItems.MITHRIL_SWORD.get());
 				tabData.accept(TheHobbitModModItems.STING.get());
 				tabData.accept(TheHobbitModModItems.GLAMDRING.get());
 				tabData.accept(TheHobbitModModItems.ORCRIST.get());
 				tabData.accept(TheHobbitModModBlocks.MITHRIL_ORE.get().asItem());
-				tabData.accept(TheHobbitModModItems.MITHRIL_AXE.get());
 				tabData.accept(TheHobbitModModItems.PIPE.get());
 				tabData.accept(TheHobbitModModItems.MITHRIL_ARMOR_HELMET.get());
 				tabData.accept(TheHobbitModModItems.MITHRIL_ARMOR_CHESTPLATE.get());
@@ -66,9 +63,20 @@ public class TheHobbitModModTabs {
 			tabData.accept(TheHobbitModModBlocks.MALLORN_PRESSURE_PLATE.get().asItem());
 		}
 
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_SWORD.get());
+		}
+
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(TheHobbitModModBlocks.MALLORN_LEAVES.get().asItem());
 			tabData.accept(TheHobbitModModBlocks.MALLORN_FENCE.get().asItem());
+		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_PICKAXE.get());
+			tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_AXE.get());
+			tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_SHOVEL.get());
+			tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_HOE.get());
 		}
 	}
 }

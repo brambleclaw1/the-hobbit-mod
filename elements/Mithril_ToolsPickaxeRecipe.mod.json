@@ -8,11 +8,11 @@
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "craftingBookCategory": "MISC",
+    "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:MithrilIngot"
       },
       {
         "value": "CUSTOM:MithrilIngot"
@@ -27,7 +27,7 @@
         "value": "Items.STICK"
       },
       {
-        "value": "CUSTOM:MithrilIngot"
+        "value": ""
       },
       {
         "value": ""
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:MithrilAxe"
+      "value": "CUSTOM:Mithril_ToolsPickaxe"
     },
-    "name": "mithril_axe_recipe",
+    "name": "mithril_tools_pickaxe_recipe",
     "namespace": "mod"
   }
 }

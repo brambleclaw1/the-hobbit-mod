@@ -22,10 +22,12 @@ import net.mcreator.thehobbitmod.item.RawMithrilItem;
 import net.mcreator.thehobbitmod.item.PipeItem;
 import net.mcreator.thehobbitmod.item.OrcristItem;
 import net.mcreator.thehobbitmod.item.NineRingsItem;
-import net.mcreator.thehobbitmod.item.MithrilSwordItem;
-import net.mcreator.thehobbitmod.item.MithrilPickaxeItem;
+import net.mcreator.thehobbitmod.item.Mithril_ToolsSwordItem;
+import net.mcreator.thehobbitmod.item.Mithril_ToolsShovelItem;
+import net.mcreator.thehobbitmod.item.Mithril_ToolsPickaxeItem;
+import net.mcreator.thehobbitmod.item.Mithril_ToolsHoeItem;
+import net.mcreator.thehobbitmod.item.Mithril_ToolsAxeItem;
 import net.mcreator.thehobbitmod.item.MithrilIngotItem;
-import net.mcreator.thehobbitmod.item.MithrilAxeItem;
 import net.mcreator.thehobbitmod.item.MithrilArmorItem;
 import net.mcreator.thehobbitmod.item.MistyMountainsItem;
 import net.mcreator.thehobbitmod.item.HeatedMithrilItem;
@@ -41,13 +43,10 @@ public class TheHobbitModModItems {
 	public static final RegistryObject<Item> RAW_MITHRIL = REGISTRY.register("raw_mithril", () -> new RawMithrilItem());
 	public static final RegistryObject<Item> BURNING_MAGMA_SHARD = REGISTRY.register("burning_magma_shard", () -> new BurningMagmaShardItem());
 	public static final RegistryObject<Item> BURNING_MAGMA = block(TheHobbitModModBlocks.BURNING_MAGMA);
-	public static final RegistryObject<Item> MITHRIL_PICKAXE = REGISTRY.register("mithril_pickaxe", () -> new MithrilPickaxeItem());
-	public static final RegistryObject<Item> MITHRIL_SWORD = REGISTRY.register("mithril_sword", () -> new MithrilSwordItem());
 	public static final RegistryObject<Item> STING = REGISTRY.register("sting", () -> new StingItem());
 	public static final RegistryObject<Item> GLAMDRING = REGISTRY.register("glamdring", () -> new GlamdringItem());
 	public static final RegistryObject<Item> ORCRIST = REGISTRY.register("orcrist", () -> new OrcristItem());
 	public static final RegistryObject<Item> MITHRIL_ORE = block(TheHobbitModModBlocks.MITHRIL_ORE);
-	public static final RegistryObject<Item> MITHRIL_AXE = REGISTRY.register("mithril_axe", () -> new MithrilAxeItem());
 	public static final RegistryObject<Item> PIPE = REGISTRY.register("pipe", () -> new PipeItem());
 	public static final RegistryObject<Item> MITHRIL_ARMOR_HELMET = REGISTRY.register("mithril_armor_helmet", () -> new MithrilArmorItem.Helmet());
 	public static final RegistryObject<Item> MITHRIL_ARMOR_CHESTPLATE = REGISTRY.register("mithril_armor_chestplate", () -> new MithrilArmorItem.Chestplate());
@@ -70,6 +69,11 @@ public class TheHobbitModModItems {
 	public static final RegistryObject<Item> MALLORN_FENCE_GATE = block(TheHobbitModModBlocks.MALLORN_FENCE_GATE);
 	public static final RegistryObject<Item> MALLORN_PRESSURE_PLATE = block(TheHobbitModModBlocks.MALLORN_PRESSURE_PLATE);
 	public static final RegistryObject<Item> MALLORN_BUTTON = block(TheHobbitModModBlocks.MALLORN_BUTTON);
+	public static final RegistryObject<Item> MITHRIL_TOOLS_PICKAXE = REGISTRY.register("mithril_tools_pickaxe", () -> new Mithril_ToolsPickaxeItem());
+	public static final RegistryObject<Item> MITHRIL_TOOLS_AXE = REGISTRY.register("mithril_tools_axe", () -> new Mithril_ToolsAxeItem());
+	public static final RegistryObject<Item> MITHRIL_TOOLS_SWORD = REGISTRY.register("mithril_tools_sword", () -> new Mithril_ToolsSwordItem());
+	public static final RegistryObject<Item> MITHRIL_TOOLS_SHOVEL = REGISTRY.register("mithril_tools_shovel", () -> new Mithril_ToolsShovelItem());
+	public static final RegistryObject<Item> MITHRIL_TOOLS_HOE = REGISTRY.register("mithril_tools_hoe", () -> new Mithril_ToolsHoeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

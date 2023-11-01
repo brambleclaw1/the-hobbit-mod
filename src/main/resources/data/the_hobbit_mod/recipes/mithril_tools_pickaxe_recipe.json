@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "equipment",
   "pattern": [
     "012",
     " 4 ",
@@ -24,7 +24,7 @@
     }
   },
   "result": {
-    "item": "the_hobbit_mod:mithril_pickaxe",
+    "item": "the_hobbit_mod:mithril_tools_pickaxe",
     "count": 1
   }
 }
