@@ -1413,6 +1413,20 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "WeatherHills",
+      "type": "biome",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weather_hills",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/weather_hills.json"
+        ]
+      },
+      "path": "~/Biomes"
     }
   ],
   "variable_elements": [],
@@ -1514,6 +1528,7 @@
       "item.the_hobbit_mod.mithril_armor_helmet": "Mithril Helmet",
       "advancements.the_hobbit_mod_install.descr": "Enter Middle Earth",
       "block.the_hobbit_mod.mithril_ore": "Mithril Ore",
+      "biome.the_hobbit_mod.weather_hills": "Weather Hills",
       "block.the_hobbit_mod.mallorn_slab": "Mallorn Slab",
       "block.the_hobbit_mod.burning_magma": "Burning Magma",
       "item.the_hobbit_mod.mithril_tools_hoe": "Mithril Hoe",
