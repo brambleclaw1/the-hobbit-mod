@@ -17,6 +17,9 @@
       },
       {
         "value": "CUSTOM:HobbitPlains"
+      },
+      {
+        "value": "CUSTOM:WeatherHills"
       }
     ],
     "worldGenType": "Normal world gen",

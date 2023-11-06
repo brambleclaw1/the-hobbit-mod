@@ -74,6 +74,7 @@ public class TheHobbitModModItems {
 	public static final RegistryObject<Item> MITHRIL_TOOLS_SWORD = REGISTRY.register("mithril_tools_sword", () -> new Mithril_ToolsSwordItem());
 	public static final RegistryObject<Item> MITHRIL_TOOLS_SHOVEL = REGISTRY.register("mithril_tools_shovel", () -> new Mithril_ToolsShovelItem());
 	public static final RegistryObject<Item> MITHRIL_TOOLS_HOE = REGISTRY.register("mithril_tools_hoe", () -> new Mithril_ToolsHoeItem());
+	public static final RegistryObject<Item> FORGER = block(TheHobbitModModBlocks.FORGER);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

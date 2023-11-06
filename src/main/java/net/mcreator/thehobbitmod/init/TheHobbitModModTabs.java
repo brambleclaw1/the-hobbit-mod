@@ -50,7 +50,10 @@ public class TheHobbitModModTabs {
 				tabData.accept(TheHobbitModModBlocks.MALLORN_PLANKS.get().asItem());
 				tabData.accept(TheHobbitModModBlocks.MALLORN_STAIRS.get().asItem());
 				tabData.accept(TheHobbitModModBlocks.MALLORN_SLAB.get().asItem());
+				tabData.accept(TheHobbitModModBlocks.MALLORN_FENCE.get().asItem());
+				tabData.accept(TheHobbitModModBlocks.MALLORN_FENCE_GATE.get().asItem());
 				tabData.accept(TheHobbitModModBlocks.MALLORN_BUTTON.get().asItem());
+				tabData.accept(TheHobbitModModBlocks.FORGER.get().asItem());
 			})
 
 					.build());
@@ -59,7 +62,6 @@ public class TheHobbitModModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
 		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
-			tabData.accept(TheHobbitModModBlocks.MALLORN_FENCE_GATE.get().asItem());
 			tabData.accept(TheHobbitModModBlocks.MALLORN_PRESSURE_PLATE.get().asItem());
 		}
 
@@ -69,7 +71,6 @@ public class TheHobbitModModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(TheHobbitModModBlocks.MALLORN_LEAVES.get().asItem());
-			tabData.accept(TheHobbitModModBlocks.MALLORN_FENCE.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

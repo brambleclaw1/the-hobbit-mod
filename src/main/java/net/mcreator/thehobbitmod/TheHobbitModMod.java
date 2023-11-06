@@ -35,6 +35,7 @@ import net.mcreator.thehobbitmod.init.TheHobbitModModItems;
 import net.mcreator.thehobbitmod.init.TheHobbitModModFeatures;
 import net.mcreator.thehobbitmod.init.TheHobbitModModEntities;
 import net.mcreator.thehobbitmod.init.TheHobbitModModBlocks;
+import net.mcreator.thehobbitmod.init.TheHobbitModModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -55,7 +56,7 @@ public class TheHobbitModMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		TheHobbitModModSounds.REGISTRY.register(bus);
 		TheHobbitModModBlocks.REGISTRY.register(bus);
-
+		TheHobbitModModBlockEntities.REGISTRY.register(bus);
 		TheHobbitModModItems.REGISTRY.register(bus);
 		TheHobbitModModEntities.REGISTRY.register(bus);
 

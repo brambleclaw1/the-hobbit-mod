@@ -1062,12 +1062,12 @@
       "registry_name": "mallorn_fence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_fence.json",
-          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_fence.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_inventory.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_post.json",
           "src/main/java/net/mcreator/thehobbitmod/block/MallornFenceBlock.java",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence.json"
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_post.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_inventory.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_fence.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_fence.json"
         ]
       },
       "path": "~/Blocks"
@@ -1081,13 +1081,13 @@
       "registry_name": "mallorn_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_fence_gate.json",
-          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_fence_gate.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_wall.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_wall_open.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_open.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate.json",
           "src/main/java/net/mcreator/thehobbitmod/block/MallornFenceGateBlock.java",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate.json"
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_wall_open.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_fence_gate.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_wall.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_fence_gate.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_open.json"
         ]
       },
       "path": "~/Blocks"
@@ -1427,6 +1427,55 @@
         ]
       },
       "path": "~/Biomes"
+    },
+    {
+      "name": "MallornTreeChest",
+      "type": "loottable",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mallorn_tree_chest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/loot_tables/chests/mallorn_tree_chest.json"
+        ]
+      },
+      "path": "~/Loot Tables"
+    },
+    {
+      "name": "Forger",
+      "type": "block",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_hobbit_mod/blockstates/forger.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/ForgerBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/forger.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/entity/ForgerBlockEntity.java",
+          "src/main/resources/assets/the_hobbit_mod/models/block/forger.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "GiantMallornTree",
+      "type": "structure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "giant_mallorn_tree",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/giant_mallorn_tree.json",
+          "src/main/java/net/mcreator/thehobbitmod/world/features/GiantMallornTreeFeature.java",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/giant_mallorn_tree_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/giant_mallorn_tree.json"
+        ]
+      },
+      "path": "~/Structures"
     }
   ],
   "variable_elements": [],
@@ -1494,6 +1543,7 @@
       "subtitles.erebor": "",
       "biome.the_hobbit_mod.elven_forest": "Elven Forest",
       "subtitles.nazgul_dead": "",
+      "block.the_hobbit_mod.forger": "Forger",
       "subtitles.dreaming_of_bag_endd": "",
       "subtitles.feast_of_starlight": "",
       "entity.the_hobbit_mod.nazgul": "Nazgul",
