@@ -71,8 +71,8 @@
               0.3
             ],
             "continentalness": [
-              0.3,
-              1
+              0.03,
+              0.5
             ],
             "weirdness": [
               -1,

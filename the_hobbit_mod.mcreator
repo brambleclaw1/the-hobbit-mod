@@ -1476,6 +1476,34 @@
         ]
       },
       "path": "~/Structures"
+    },
+    {
+      "name": "DeadMarshes",
+      "type": "biome",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_marshes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/dead_marshes.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "MistyMountain",
+      "type": "biome",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "misty_mountain",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/misty_mountain.json"
+        ]
+      },
+      "path": "~/Biomes"
     }
   ],
   "variable_elements": [],
@@ -1566,6 +1594,7 @@
       "subtitles.get_ring": "",
       "block.the_hobbit_mod.mallorn_log": "Mallorn Log",
       "subtitles.lothlorien": "",
+      "biome.the_hobbit_mod.dead_marshes": "Dead Marshes",
       "item.the_hobbit_mod.the_one_ring": "The One Ring",
       "block.the_hobbit_mod.mallorn_wood": "Mallorn Wood",
       "item.the_hobbit_mod.nazgul_spawn_egg": "Nazgul Spawn Egg",
@@ -1607,6 +1636,7 @@
       "subtitles.misty_mountains": "",
       "advancements.the_bane_of_men.descr": "Hold the Nine Ring for the first time.",
       "item.the_hobbit_mod.mithril_tools_axe": "Mithril Axe",
+      "biome.the_hobbit_mod.misty_mountain": "Misty Mountains",
       "subtitles.nazgul": "",
       "item_group.the_hobbit_mod.the_hobbit_mod": "The Hobbit Mod",
       "item.the_hobbit_mod.mithril_tools_shovel": "Mithril Shovel",
@@ -1672,7 +1702,7 @@
   "workspaceSettings": {
     "modid": "the_hobbit_mod",
     "modName": "The Hobbit Mod",
-    "version": "1.2.1",
+    "version": "1.3.0",
     "description": "Introduces The Hobbit into Minecraft.",
     "author": "gh5674",
     "websiteURL": "https://mcreator.net/modification/92049/hobbit-mod",
