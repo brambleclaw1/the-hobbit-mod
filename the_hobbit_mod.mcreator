@@ -443,9 +443,9 @@
       "registry_name": "elven_forest",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/elven_forest_tree.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json"
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json"
         ]
       },
       "path": "~/Biomes"

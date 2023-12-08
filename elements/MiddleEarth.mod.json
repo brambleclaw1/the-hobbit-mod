@@ -20,6 +20,12 @@
       },
       {
         "value": "CUSTOM:WeatherHills"
+      },
+      {
+        "value": "CUSTOM:MistyMountain"
+      },
+      {
+        "value": "CUSTOM:DeadMarshes"
       }
     ],
     "worldGenType": "Normal world gen",

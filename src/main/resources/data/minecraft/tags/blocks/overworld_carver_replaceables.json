@@ -5,6 +5,8 @@
     "minecraft:basalt",
     "minecraft:blackstone",
     "minecraft:grass_block",
-    "minecraft:dirt"
+    "minecraft:dirt",
+    "minecraft:snow_block",
+    "minecraft:ice"
   ]
 }
