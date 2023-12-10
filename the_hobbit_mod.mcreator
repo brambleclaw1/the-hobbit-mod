@@ -1563,6 +1563,14 @@
       ],
       "category": "music",
       "subtitle": ""
+    },
+    {
+      "name": "ring",
+      "files": [
+        "ring"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -1640,6 +1648,7 @@
       "subtitles.nazgul": "",
       "item_group.the_hobbit_mod.the_hobbit_mod": "The Hobbit Mod",
       "item.the_hobbit_mod.mithril_tools_shovel": "Mithril Shovel",
+      "subtitles.ring": "",
       "advancements.its_worth_is_greater.descr": "Make a Mithril Chestplate.",
       "block.the_hobbit_mod.mallorn_stairs": "Mallorn Stairs",
       "biome.the_hobbit_mod.dragon_burned_field": "Dragon Burned Field",

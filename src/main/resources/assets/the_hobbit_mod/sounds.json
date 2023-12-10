@@ -54,5 +54,13 @@
         "stream": true
       }
     ]
+  },
+  "ring": {
+    "sounds": [
+      {
+        "name": "the_hobbit_mod:ring",
+        "stream": false
+      }
+    ]
   }
 }
