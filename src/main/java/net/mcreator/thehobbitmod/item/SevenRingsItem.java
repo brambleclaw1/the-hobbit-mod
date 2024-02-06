@@ -3,12 +3,16 @@ package net.mcreator.thehobbitmod.item;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.thehobbitmod.procedures.SevenRingsItemInHandTickProcedure;
+
+import java.util.List;
 
 public class SevenRingsItem extends Item {
 	public SevenRingsItem() {
@@ -18,6 +22,11 @@ public class SevenRingsItem extends Item {
 	@Override
 	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 		return 3f;
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override

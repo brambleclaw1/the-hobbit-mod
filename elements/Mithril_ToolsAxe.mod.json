@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "mithril_tools_axe",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Mithril Axe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "TOOLS"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 81.0,
     "usageCount": 5419,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:MithrilIngot"

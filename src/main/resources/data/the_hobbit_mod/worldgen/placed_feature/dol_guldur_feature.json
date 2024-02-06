@@ -1,0 +1,19 @@
+{
+  "feature": "the_hobbit_mod:dol_guldur_feature",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 33
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

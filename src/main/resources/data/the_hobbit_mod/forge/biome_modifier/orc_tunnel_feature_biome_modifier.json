@@ -1,0 +1,15 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "the_hobbit_mod:elven_forest",
+    "the_hobbit_mod:dragon_burned_field",
+    "the_hobbit_mod:mordor",
+    "plains",
+    "the_hobbit_mod:hobbit_plains",
+    "the_hobbit_mod:weather_hills",
+    "the_hobbit_mod:misty_mountain",
+    "the_hobbit_mod:dead_marshes"
+  ],
+  "features": "the_hobbit_mod:orc_tunnel_feature",
+  "step": "underground_structures"
+}

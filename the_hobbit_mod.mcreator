@@ -114,7 +114,6 @@
           "src/main/resources/assets/the_hobbit_mod/blockstates/burning_magma.json",
           "src/main/resources/assets/the_hobbit_mod/models/block/burning_magma.json",
           "src/main/resources/assets/the_hobbit_mod/models/item/burning_magma.json",
-          "src/main/java/net/mcreator/thehobbitmod/world/features/ores/BurningMagmaFeature.java",
           "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/burning_magma_biome_modifier.json",
           "src/main/java/net/mcreator/thehobbitmod/block/BurningMagmaBlock.java"
         ]
@@ -134,23 +133,6 @@
         ]
       },
       "path": "~/Recipes"
-    },
-    {
-      "name": "HobbitHole",
-      "type": "structure",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hobbit_hole",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/thehobbitmod/world/features/HobbitHoleFeature.java",
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/hobbit_hole.json",
-          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/hobbit_hole_biome_modifier.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/hobbit_hole.json"
-        ]
-      },
-      "path": "~/Structures"
     },
     {
       "name": "Sting",
@@ -218,23 +200,6 @@
       "path": "~/Procedures"
     },
     {
-      "name": "OrcTunnel",
-      "type": "structure",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "orc_tunnel",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/orc_tunnel.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/orc_tunnel.json",
-          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/orc_tunnel_biome_modifier.json",
-          "src/main/java/net/mcreator/thehobbitmod/world/features/OrcTunnelFeature.java"
-        ]
-      },
-      "path": "~/Structures"
-    },
-    {
       "name": "MithrilOre",
       "type": "block",
       "sortid": 17,
@@ -244,7 +209,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/thehobbitmod/block/MithrilOreBlock.java",
-          "src/main/java/net/mcreator/thehobbitmod/world/features/ores/MithrilOreFeature.java",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/mithril_ore.json",
           "src/main/resources/assets/the_hobbit_mod/models/item/mithril_ore.json",
           "src/main/resources/assets/the_hobbit_mod/blockstates/mithril_ore.json",
@@ -443,9 +407,9 @@
       "registry_name": "elven_forest",
       "metadata": {
         "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/elven_forest_tree.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json"
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json"
         ]
       },
       "path": "~/Biomes"
@@ -491,40 +455,6 @@
         ]
       },
       "path": "~/Recipes"
-    },
-    {
-      "name": "AbandonedDwarfMine",
-      "type": "structure",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "abandoned_dwarf_mine",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/thehobbitmod/world/features/AbandonedDwarfMineFeature.java",
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/abandoned_dwarf_mine.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/abandoned_dwarf_mine.json",
-          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/abandoned_dwarf_mine_biome_modifier.json"
-        ]
-      },
-      "path": "~/Structures"
-    },
-    {
-      "name": "ElvenVillage",
-      "type": "structure",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elven_village",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_village.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/elven_village.json",
-          "src/main/java/net/mcreator/thehobbitmod/world/features/ElvenVillageFeature.java",
-          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/elven_village_biome_modifier.json"
-        ]
-      },
-      "path": "~/Structures"
     },
     {
       "name": "TheHobbitModInstall",
@@ -660,23 +590,6 @@
         ]
       },
       "path": "~/Biomes"
-    },
-    {
-      "name": "DolGuldur",
-      "type": "structure",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dol_guldur",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/thehobbitmod/world/features/DolGuldurFeature.java",
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/dol_guldur.json",
-          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/dol_guldur_biome_modifier.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/dol_guldur.json"
-        ]
-      },
-      "path": "~/Structures"
     },
     {
       "name": "SevenRings",
@@ -867,29 +780,12 @@
       "registry_name": "hobbit_plains",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/hobbit_plains_tree.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/hobbit_plains_tree.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/hobbit_plains_tree.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/biome/hobbit_plains.json"
         ]
       },
       "path": "~/Biomes"
-    },
-    {
-      "name": "Ruins",
-      "type": "structure",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ruins",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/ruins.json",
-          "src/main/java/net/mcreator/thehobbitmod/world/features/RuinsFeature.java",
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/ruins.json",
-          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/ruins_biome_modifier.json"
-        ]
-      },
-      "path": "~/Structures"
     },
     {
       "name": "TheQuietFolk",
@@ -934,10 +830,6 @@
           {
             "name": "dimension",
             "type": "dimensiontype"
-          },
-          {
-            "name": "pose",
-            "type": "pose"
           },
           {
             "name": "world",
@@ -1062,12 +954,12 @@
       "registry_name": "mallorn_fence",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/block/MallornFenceBlock.java",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_post.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_inventory.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence.json",
           "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_fence.json",
-          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_fence.json"
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_fence.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_inventory.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_post.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornFenceBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence.json"
         ]
       },
       "path": "~/Blocks"
@@ -1081,13 +973,13 @@
       "registry_name": "mallorn_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate.json",
-          "src/main/java/net/mcreator/thehobbitmod/block/MallornFenceGateBlock.java",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_wall_open.json",
           "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_fence_gate.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_wall.json",
           "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_fence_gate.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_open.json"
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_wall.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_wall_open.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_open.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornFenceGateBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate.json"
         ]
       },
       "path": "~/Blocks"
@@ -1278,8 +1170,8 @@
       "registry_name": "mithril_tools_pickaxe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_pickaxe.json",
-          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsPickaxeItem.java"
+          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsPickaxeItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_pickaxe.json"
         ]
       },
       "path": "~/ToolsAndArmor"
@@ -1293,8 +1185,8 @@
       "registry_name": "mithril_tools_axe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_axe.json",
-          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsAxeItem.java"
+          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsAxeItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_axe.json"
         ]
       },
       "path": "~/ToolsAndArmor"
@@ -1308,8 +1200,8 @@
       "registry_name": "mithril_tools_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_sword.json",
-          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsSwordItem.java"
+          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsSwordItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_sword.json"
         ]
       },
       "path": "~/ToolsAndArmor"
@@ -1452,30 +1344,13 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/the_hobbit_mod/blockstates/forger.json",
-          "src/main/java/net/mcreator/thehobbitmod/block/ForgerBlock.java",
           "src/main/resources/assets/the_hobbit_mod/models/item/forger.json",
-          "src/main/java/net/mcreator/thehobbitmod/block/entity/ForgerBlockEntity.java",
-          "src/main/resources/assets/the_hobbit_mod/models/block/forger.json"
+          "src/main/resources/assets/the_hobbit_mod/models/block/forger.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/ForgerBlock.java",
+          "src/main/java/net/mcreator/thehobbitmod/block/entity/ForgerBlockEntity.java"
         ]
       },
       "path": "~/Blocks"
-    },
-    {
-      "name": "GiantMallornTree",
-      "type": "structure",
-      "sortid": 96,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "giant_mallorn_tree",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/giant_mallorn_tree.json",
-          "src/main/java/net/mcreator/thehobbitmod/world/features/GiantMallornTreeFeature.java",
-          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/giant_mallorn_tree_biome_modifier.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/giant_mallorn_tree.json"
-        ]
-      },
-      "path": "~/Structures"
     },
     {
       "name": "DeadMarshes",
@@ -1504,6 +1379,125 @@
         ]
       },
       "path": "~/Biomes"
+    },
+    {
+      "name": "HobbitHoleFeature",
+      "type": "feature",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hobbit_hole_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/hobbit_hole_feature_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/hobbit_hole_feature.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/hobbit_hole_feature.json"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "OrcTunnelFeature",
+      "type": "feature",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orc_tunnel_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/orc_tunnel_feature.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/orc_tunnel_feature.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/orc_tunnel_feature_biome_modifier.json"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "AbandonedDwarfMineFeature",
+      "type": "feature",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abandoned_dwarf_mine_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/abandoned_dwarf_mine_feature_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/abandoned_dwarf_mine_feature.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/abandoned_dwarf_mine_feature.json"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "ElvenVillageFeature",
+      "type": "feature",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elven_village_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_village_feature.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/elven_village_feature_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/elven_village_feature.json"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "DolGuldurFeature",
+      "type": "feature",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dol_guldur_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/dol_guldur_feature_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/dol_guldur_feature.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/dol_guldur_feature.json"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "RuinsFeature",
+      "type": "feature",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruins_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/ruins_feature.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/ruins_feature.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/ruins_feature_biome_modifier.json"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "GiantMallornTreeFeature",
+      "type": "feature",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "giant_mallorn_tree_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/giant_mallorn_tree_feature.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/giant_mallorn_tree_feature_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/giant_mallorn_tree_feature.json"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/Structures"
     }
   ],
   "variable_elements": [],
@@ -1728,5 +1722,5 @@
     "modElementsPackage": "net.mcreator.thehobbitmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300336712
+  "mcreatorVersion": 202300452316
 }

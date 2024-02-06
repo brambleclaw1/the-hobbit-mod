@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "orcrist",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Orcrist",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:TheHobbitMod"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 73.0,
     "usageCount": 9076,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,

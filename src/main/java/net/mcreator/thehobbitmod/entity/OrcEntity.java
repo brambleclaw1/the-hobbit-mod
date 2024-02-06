@@ -92,10 +92,10 @@ public class OrcEntity extends Monster {
 	}
 
 	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		if (source.is(DamageTypes.IN_FIRE))
+	public boolean hurt(DamageSource damagesource, float amount) {
+		if (damagesource.is(DamageTypes.IN_FIRE))
 			return false;
-		return super.hurt(source, amount);
+		return super.hurt(damagesource, amount);
 	}
 
 	public static void init() {

@@ -3,20 +3,11 @@
   "group": "bark",
   "category": "building",
   "pattern": [
-    "01",
-    "23"
+    "aa",
+    "aa"
   ],
   "key": {
-    "0": {
-      "item": "the_hobbit_mod:mallorn_log"
-    },
-    "1": {
-      "item": "the_hobbit_mod:mallorn_log"
-    },
-    "2": {
-      "item": "the_hobbit_mod:mallorn_log"
-    },
-    "3": {
+    "a": {
       "item": "the_hobbit_mod:mallorn_log"
     }
   },

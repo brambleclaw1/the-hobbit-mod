@@ -3,27 +3,12 @@
   "group": "wooden_stairs",
   "category": "building",
   "pattern": [
-    "0  ",
-    "34 ",
-    "678"
+    "a  ",
+    "aa ",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "the_hobbit_mod:mallorn_planks"
-    },
-    "3": {
-      "item": "the_hobbit_mod:mallorn_planks"
-    },
-    "4": {
-      "item": "the_hobbit_mod:mallorn_planks"
-    },
-    "6": {
-      "item": "the_hobbit_mod:mallorn_planks"
-    },
-    "7": {
-      "item": "the_hobbit_mod:mallorn_planks"
-    },
-    "8": {
+    "a": {
       "item": "the_hobbit_mod:mallorn_planks"
     }
   },

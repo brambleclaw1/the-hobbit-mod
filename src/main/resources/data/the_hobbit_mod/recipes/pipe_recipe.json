@@ -2,28 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 12",
-    " 45",
-    "67 "
+    " aa",
+    " aa",
+    "ba "
   ],
   "key": {
-    "1": {
+    "a": {
       "tag": "minecraft:planks"
     },
-    "2": {
-      "tag": "minecraft:planks"
-    },
-    "4": {
-      "tag": "minecraft:planks"
-    },
-    "5": {
-      "tag": "minecraft:planks"
-    },
-    "6": {
+    "b": {
       "item": "minecraft:cobweb"
-    },
-    "7": {
-      "tag": "minecraft:planks"
     }
   },
   "result": {

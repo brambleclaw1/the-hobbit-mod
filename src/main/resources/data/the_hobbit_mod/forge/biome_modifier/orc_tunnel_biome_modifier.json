@@ -1,8 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": {
-    "type": "forge:any"
-  },
-  "features": "the_hobbit_mod:orc_tunnel",
-  "step": "underground_structures"
-}

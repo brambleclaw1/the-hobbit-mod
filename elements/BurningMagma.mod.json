@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "burning_magma",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Burning Magma",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 14.0,
     "resistance": 100000.0,
     "hasGravity": false,
@@ -117,10 +119,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "Surface",
-      "Nether"
-    ],
+    "generateFeature": true,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

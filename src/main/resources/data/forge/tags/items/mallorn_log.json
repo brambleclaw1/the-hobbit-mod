@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "the_hobbit_mod:mallorn_log",
-    "the_hobbit_mod:mallorn_wood"
+    "the_hobbit_mod:mallorn_wood",
+    "the_hobbit_mod:mallorn_log"
   ]
 }

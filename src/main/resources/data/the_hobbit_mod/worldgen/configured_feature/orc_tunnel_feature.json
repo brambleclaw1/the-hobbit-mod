@@ -1,0 +1,7 @@
+{
+  "type": "the_hobbit_mod:structure_feature",
+  "config": {
+    "structure": "the_hobbit_mod:orc_tunnel",
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

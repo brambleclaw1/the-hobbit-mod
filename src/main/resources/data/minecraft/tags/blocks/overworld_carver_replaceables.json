@@ -2,10 +2,10 @@
   "replace": false,
   "values": [
     "minecraft:stone",
-    "minecraft:basalt",
-    "minecraft:blackstone",
     "minecraft:grass_block",
     "minecraft:dirt",
+    "minecraft:basalt",
+    "minecraft:blackstone",
     "minecraft:snow_block",
     "minecraft:ice"
   ]

@@ -1,0 +1,9 @@
+{
+  "type": "the_hobbit_mod:structure_feature",
+  "config": {
+    "structure": "the_hobbit_mod:giant_mallorn_tree",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

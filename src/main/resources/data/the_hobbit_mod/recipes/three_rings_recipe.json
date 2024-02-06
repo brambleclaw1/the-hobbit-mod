@@ -2,37 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "bcb",
+    "aba"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:gold_nugget"
     },
-    "1": {
+    "b": {
       "item": "the_hobbit_mod:heated_mithril"
     },
-    "2": {
-      "item": "minecraft:gold_nugget"
-    },
-    "3": {
-      "item": "the_hobbit_mod:heated_mithril"
-    },
-    "4": {
+    "c": {
       "item": "minecraft:nether_star"
-    },
-    "5": {
-      "item": "the_hobbit_mod:heated_mithril"
-    },
-    "6": {
-      "item": "minecraft:gold_nugget"
-    },
-    "7": {
-      "item": "the_hobbit_mod:heated_mithril"
-    },
-    "8": {
-      "item": "minecraft:gold_nugget"
     }
   },
   "result": {

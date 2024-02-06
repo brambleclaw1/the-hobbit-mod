@@ -29,10 +29,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.thehobbitmod.world.features.StructureFeature;
 import net.mcreator.thehobbitmod.init.TheHobbitModModTabs;
 import net.mcreator.thehobbitmod.init.TheHobbitModModSounds;
 import net.mcreator.thehobbitmod.init.TheHobbitModModItems;
-import net.mcreator.thehobbitmod.init.TheHobbitModModFeatures;
 import net.mcreator.thehobbitmod.init.TheHobbitModModEntities;
 import net.mcreator.thehobbitmod.init.TheHobbitModModBlocks;
 import net.mcreator.thehobbitmod.init.TheHobbitModModBlockEntities;
@@ -61,7 +61,8 @@ public class TheHobbitModMod {
 		TheHobbitModModEntities.REGISTRY.register(bus);
 
 		TheHobbitModModTabs.REGISTRY.register(bus);
-		TheHobbitModModFeatures.REGISTRY.register(bus);
+
+		StructureFeature.REGISTRY.register(bus);
 
 	}
 
