@@ -10,13 +10,10 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.client.renderer.ShaderInstance;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.FogRenderer;
@@ -847,7 +844,7 @@ public class CustomSkySunriseProcedure {
 			RenderSystem.enableBlend();
 			RenderSystem.defaultBlendFunc();
 			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-			execute(_provider, level, level.dimension());
+			execute(_provider, level);
 			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 			RenderSystem.colorMask(true, true, true, true);
 			RenderSystem.enableCull();
@@ -858,25 +855,42 @@ public class CustomSkySunriseProcedure {
 		}
 	}
 
-	public static void execute(LevelAccessor world, ResourceKey<Level> dimension) {
-		execute(null, world, dimension);
+	public static void execute(LevelAccessor world) {
+		execute(null, world);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, ResourceKey<Level> dimension) {
-		if (dimension == null)
-			return;
-		double worldtime = 0;
-		worldtime = world.dayTime();
-		if (dimension == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_hobbit_mod:middle_earth")))) {
-			if (world.getLevelData().isRaining()) {
+	private static void execute(@Nullable Event event, LevelAccessor world) {
+		if (world.dayTime() == 0) {
+			{
+				ResourceLocation _texturelocation = new ResourceLocation(("the_hobbit_mod" + ":textures/" + "sunrise" + ".png"));
+				RenderSystem.setShaderTexture(0, _texturelocation);
+				Minecraft.getInstance().getTextureManager().bindForSetup(_texturelocation);
+			}
+			renderSkybox(2, 0, 0, 0, (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), false);
+		} else {
+			if (world.dayTime() == 6000) {
+				{
+					ResourceLocation _texturelocation = new ResourceLocation(("the_hobbit_mod" + ":textures/" + "noon" + ".png"));
+					RenderSystem.setShaderTexture(0, _texturelocation);
+					Minecraft.getInstance().getTextureManager().bindForSetup(_texturelocation);
+				}
+				renderSkybox(2, 0, 0, 0, (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), false);
 			} else {
-				if (worldtime <= 12000) {
+				if (world.dayTime() == 12000) {
+					{
+						ResourceLocation _texturelocation = new ResourceLocation(("the_hobbit_mod" + ":textures/" + "sunset" + ".png"));
+						RenderSystem.setShaderTexture(0, _texturelocation);
+						Minecraft.getInstance().getTextureManager().bindForSetup(_texturelocation);
+					}
+					renderSkybox(2, 0, 0, 0, (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), false);
 				} else {
-					if (worldtime <= 13000) {
-					} else {
-						if (worldtime >= 23000) {
-						} else {
+					if (world.dayTime() > 13000) {
+						{
+							ResourceLocation _texturelocation = new ResourceLocation(("the_hobbit_mod" + ":textures/" + "night" + ".png"));
+							RenderSystem.setShaderTexture(0, _texturelocation);
+							Minecraft.getInstance().getTextureManager().bindForSetup(_texturelocation);
 						}
+						renderSkybox(2, 0, 0, 0, (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), false);
 					}
 				}
 			}

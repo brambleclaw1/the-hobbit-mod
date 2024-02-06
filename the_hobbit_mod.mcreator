@@ -816,30 +816,6 @@
       "path": "~/Advancements"
     },
     {
-      "name": "CustomSkySunrise",
-      "type": "procedure",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "custom_sky_sunrise",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/thehobbitmod/procedures/CustomSkySunriseProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "dimension",
-            "type": "dimensiontype"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
       "name": "MallornWood",
       "type": "block",
       "sortid": 63,
@@ -1498,6 +1474,26 @@
         "has_nbt_structure": true
       },
       "path": "~/Structures"
+    },
+    {
+      "name": "CustomSkySunrise",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_sky_sunrise",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/procedures/CustomSkySunriseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
